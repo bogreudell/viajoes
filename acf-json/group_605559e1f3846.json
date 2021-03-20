@@ -459,7 +459,7 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "return_format": "url",
+                                    "return_format": "array",
                                     "preview_size": "medium",
                                     "library": "all",
                                     "min_width": "",
@@ -620,7 +620,7 @@
                                     "key": "field_60556af2aead5",
                                     "label": "Icon Image",
                                     "name": "icon_image",
-                                    "type": "text",
+                                    "type": "image",
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -629,11 +629,16 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "default_value": "",
-                                    "placeholder": "",
-                                    "prepend": "",
-                                    "append": "",
-                                    "maxlength": ""
+                                    "return_format": "array",
+                                    "preview_size": "medium",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": ""
                                 },
                                 {
                                     "key": "field_60556afcaead6",
@@ -683,5 +688,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1616212703
+    "modified": 1616263105
 }
