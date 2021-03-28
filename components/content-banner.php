@@ -4,11 +4,11 @@
 <?php $link = get_sub_field('link'); ?>
 <?php $link_text = get_sub_field('link_text'); ?>
 
-<div class="vj_summary" <?php if( $background_image): ?>style="background:url(<?php echo $background_image; ?>); <?php endif; ?>">
-	<div class="vj_summary__content">
-		<div class="vj_summary__content--copy">
+<div <?php if( $background_image): ?>class="vj_banner with-image" style="background:url(<?php echo $background_image; ?>);"<?php else: ?>class="vj_banner"<?php endif; ?>>
+	<div class="vj_banner__content">
+		<div class="vj_banner__content--copy">
 			<?php echo $copy_text; ?>
 		</div>
-		<a href="<?php echo $link; ?>" class="vj_summary__content--link"><?php echo $link_text; ?></a>
+		<a href="<?php echo $link; ?>" class="vj_banner__content--link"><?php echo $link_text; ?></a>
 	</div>
 </div>

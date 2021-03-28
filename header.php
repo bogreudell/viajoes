@@ -7,11 +7,22 @@
 	<?php wp_head(); ?>
 </head>
 
-<header role="navigation">
+<body <?php body_class(); ?>>
+
+<header class="vj_header" role="navigation">
 	<?php $logo = get_field('logo', 'option'); ?>
 	<?php $logo_url = $logo['url']; ?>
 	<?php $logo_alt = $logo['alt']; ?>
 
-	<img src="<?php echo $logo['url']; ?>" alt="<?php echo $logo_alt; ?>">
-	<?php wp_nav_menu(); ?>
+	<div class="vj_header__logo">
+		<img class="vj_header__logo--image" src="<?php echo $logo['url']; ?>" alt="<?php echo $logo_alt; ?>">
+	</div>
+	<?php wp_nav_menu(
+			array(
+				'menu' => 'Main Menu', 
+				'menu_class' => 'vj_header__menu--navigation', 
+				'container_class' => 'vj_header__menu' 
+			)
+		  ); ?>
+	<!-- vj_header__menu--actions when user interface is built -->
 </header>

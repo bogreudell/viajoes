@@ -16,3 +16,6 @@
 		Built by Daniel Bögre Udell (@bogreudell)
 	</div>
 </footer>
+<?php wp_footer(); ?>
+</body>
+</html>

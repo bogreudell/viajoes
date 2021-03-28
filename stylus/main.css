@@ -1,0 +1,116 @@
+.vj_video {
+  position: relative;
+  width: 100%;
+  height: 85vh;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 0 /* override space between inline child elements */;
+}
+.vj_video__slide {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  font-size: initial /* reset font-size for child elements */;
+  cursor: pointer;
+}
+.vj_video__slide--text {
+  z-index: 5;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.vj_video__slide--player {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.vj_video__controls--leftnav {
+  position: absolute;
+  z-index: 9;
+  font-size: initial;
+  top: 50%;
+  left: 3%;
+  transform: translate(0, -50%);
+  border: 0;
+  outline: 0;
+  background: none;
+  margin: 0;
+  padding: 0;
+}
+.vj_video__controls--rightnav {
+  position: absolute;
+  z-index: 9;
+  font-size: initial;
+  top: 50%;
+  left: auto;
+  transform: translate(0, -50%);
+  right: 3%;
+  border: 0;
+  outline: 0;
+  background: none;
+  margin: 0;
+  padding: 0;
+}
+.vj_banner {
+  position: relative;
+  height: 75vh;
+}
+.vj_banner.with-image {
+  background-position: center center !important;
+  background-size: cover !important;
+}
+.vj_banner__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.vj_summary {
+  position: relative;
+  height: 75vh;
+}
+.vj_summary.with-image {
+  background-position: center center !important;
+  background-size: cover !important;
+}
+.vj_summary__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.vj_header {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+}
+.vj_header>div {
+  vertical-align: middle;
+}
+.vj_header__logo {
+  display: inline-block;
+  height: 65px;
+}
+.vj_header__logo--image {
+  height: 100%;
+  width: auto;
+}
+.vj_header__menu {
+  display: inline-block;
+}
+.vj_header__menu--navigation li {
+  display: inline;
+  margin: 0 0 0 20px;
+}

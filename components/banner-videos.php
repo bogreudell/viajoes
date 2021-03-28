@@ -13,8 +13,11 @@
 
 	<!-- video slide markup -->
 	<div class="vj_video__slide">
-		<h1 class="vj_video__slide--text"><?php echo $video_text; ?></h1>
-		<video class="vj_video__slide--player" playsinline="" loop="true" muted="" autoplay="true" <?php if( $video_still_image ): ?>poster="<?php echo $video_still_image; ?>"<?php endif; ?>>
+		<div class="vj_video__slide--text">
+			<h1><?php echo $video_text; ?></h1>
+			<i class="far fa-play-circle"></i>
+		</div>
+		<video class="vj_video__slide--player" playsinline muted <?php if( $video_still_image ): ?>poster="<?php echo $video_still_image; ?>"<?php endif; ?>>
 			<?php if( $hd_streaming ): ?>
 			<source src="<?php echo $hd_streaming; ?>" type="video/mp4">
 			<?php endif; ?>
@@ -34,5 +37,15 @@
 	</div><!-- end video slide markup -->
 	
 	<?php endwhile; ?>
-<!-- we will need video controls -->
+
+	<!-- show video slideshow nav if >1 video -->
+	<?php $banner_videos_count = get_field('banner_videos'); ?>
+	<?php if ( sizeOf($banner_videos_count) > 1 ): ?>
+	<button class="vj_video__controls--leftnav">
+		<i class="fas fa-chevron-left"></i>
+	</button>
+	<button class="vj_video__controls--rightnav">
+		<i class="fas fa-chevron-right"></i>
+	</button>
+	<?php endif; ?>
 </div><!-- close video banner wrapper -->

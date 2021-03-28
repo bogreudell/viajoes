@@ -14,6 +14,18 @@ function my_theme_enqueue_styles() {
     );
 }
 
+// enqueue custom js
+add_action('wp_enqueue_scripts', 'my_theme_enqueue_js');
+function my_theme_enqueue_js() {
+    wp_enqueue_script( 'my_theme_enqueue_js', get_stylesheet_directory_uri() . '/js/custom.js', array('jquery'), null, true );
+}
+
+// remove header bump from core css output
+add_action('get_header', 'my_filter_head');
+function my_filter_head() {
+   remove_action('wp_head', '_admin_bar_bump_cb');
+} 
+
 // initiate options page
 if( function_exists('acf_add_options_page') ) {   
     acf_add_options_page();

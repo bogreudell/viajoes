@@ -1,0 +1,44 @@
+.vj_video
+	position relative
+	width 100%
+	height 85vh
+	overflow hidden
+	white-space nowrap
+	font-size 0 /* override space between inline child elements */
+	
+	&__slide
+		display inline-block
+		width 100%
+		height 100%
+		position relative
+		overflow hidden
+		font-size initial /* reset font-size for child elements */
+		cursor pointer
+		
+		&--text
+			z-index 5
+			position absolute
+			verticalAlign(50%,50%,-50%,-50%)
+			text-align center
+			
+		&--player
+			position absolute
+			min-width 100%
+			min-height 100%
+			verticalAlign(50%,50%,-50%,-50%)
+	
+	&__controls
+		&--leftnav
+			position absolute
+			z-index 9
+			font-size initial
+			verticalAlign(50%,3%,0,-50%)
+			resetButtonStyles()				
+
+		&--rightnav
+			position absolute
+			z-index 9
+			font-size initial
+			verticalAlign(50%,auto,0,-50%)
+			right 3%
+			resetButtonStyles()

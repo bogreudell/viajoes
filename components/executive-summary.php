@@ -3,7 +3,7 @@
 <?php $link = get_sub_field('link'); ?>
 <?php $link_text = get_sub_field('link_text'); ?>
 
-<div class="vj_summary" <?php if( $background_image): ?>style="background:url(<?php echo $background_image; ?>); <?php endif; ?>">
+<div <?php if( $background_image): ?>class="vj_summary with-image" style="background:url(<?php echo $background_image; ?>);"<?php else: ?>class="vj_summary"<?php endif; ?>>
 	<div class="vj_summary__content">
 		<div class="vj_summary__content--copy">
 			<?php echo $copy_text; ?>
