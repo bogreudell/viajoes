@@ -1,3 +1,15 @@
+.vj_bannerimage {
+  position: relative;
+  height: 75vh;
+  background-position: center center;
+  background-size: cover;
+}
+.vj_bannerimage__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .vj_video {
   position: relative;
   width: 100%;
@@ -18,6 +30,7 @@
 .vj_video__slide--text {
   z-index: 5;
   position: absolute;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -27,6 +40,7 @@
   position: absolute;
   min-width: 100%;
   min-height: 100%;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -35,6 +49,7 @@
   position: absolute;
   z-index: 9;
   font-size: initial;
+  position: absolute;
   top: 50%;
   left: 3%;
   transform: translate(0, -50%);
@@ -48,6 +63,7 @@
   position: absolute;
   z-index: 9;
   font-size: initial;
+  position: absolute;
   top: 50%;
   left: auto;
   transform: translate(0, -50%);
@@ -68,6 +84,7 @@
 }
 .vj_banner__content {
   position: absolute;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -83,10 +100,41 @@
 }
 .vj_summary__content {
   position: absolute;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+}
+.vj_icons {
+  padding: 10% 0;
+  text-align: center;
+}
+.vj_icons .vj_icon {
+  display: inline-block;
+  width: 200px;
+}
+.vj_icons .vj_icon img {
+  width: 100%;
+  height: auto;
+}
+.vj_services .vj_service__content {
+  position: relative;
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+.vj_services .vj_service__image {
+  width: 50%;
+  float: left;
+  padding-bottom: 50%;
+}
+.vj_services .vj_service .clear {
+  clear: both;
+}
+.vj_services .vj_service:nth-of-type(2n) .vj_service__content,
+.vj_services .vj_service:nth-of-type(2n) .vj_service__image {
+  float: right;
 }
 .vj_header {
   z-index: 10;
@@ -113,4 +161,42 @@
 .vj_header__menu--navigation li {
   display: inline;
   margin: 0 0 0 20px;
+}
+.vj_footer {
+  background: #000;
+  color: #fff;
+}
+.vj_footer__row:first-of-type {
+  text-align: center;
+}
+.vj_footer__row:first-of-type>ul,
+.vj_footer__row:first-of-type>div {
+  display: inline-block;
+  vertical-align: top;
+}
+.vj_footer__row:first-of-type .vj_footer__designcredit {
+  text-align: left;
+}
+.vj_footer__row:first-of-type .vj_footer__menu {
+  margin-left: 50px;
+}
+.vj_footer__row:first-of-type .vj_footer__menu--navigation {
+  text-align: left;
+  column-count: 4;
+  column-gap: 50px;
+}
+.vj_footer__row:last-of-type>ul,
+.vj_footer__row:last-of-type>div {
+  display: inline-block;
+  vertical-align: top;
+  width: 40%;
+}
+.vj_footer__row:last-of-type .vj_footer__paymenticons li {
+  display: inline;
+}
+.vj_footer__row:last-of-type .vj_footer__devcredit {
+  text-align: right;
+}
+body.single {
+  padding-top: 85px;
 }

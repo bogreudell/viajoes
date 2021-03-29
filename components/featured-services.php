@@ -15,14 +15,17 @@
 
 	<div class="vj_service">
 		<aside class="vj_service__content">
-			<h3><?php echo $header_text; ?></h3>
-			<p><?php echo $copy_text; ?></p>
-			<a href="<?php echo $link; ?>">
-				<?php echo $link_text; ?>
-			</a>
+			<div class="vj_service__content--body">
+				<h3><?php echo $header_text; ?></h3>
+				<p><?php echo $copy_text; ?></p>
+				<a href="<?php echo $link; ?>">
+					<?php echo $link_text; ?>
+				</a>
+			</div>
 		</aside>
 		<aside class="vj_service__image" role="img" aria-label="<?php echo $image_alt; ?>" style="background:url(<?php echo $image_url; ?>) center center no-repeat; ">
 		</aside>
+		<div class="clear"></div>
 	</div><!-- end service block markup -->
 	<?php endwhile; ?>
 </div><!-- close services wrapper -->

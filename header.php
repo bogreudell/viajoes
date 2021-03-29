@@ -15,7 +15,9 @@
 	<?php $logo_alt = $logo['alt']; ?>
 
 	<div class="vj_header__logo">
-		<img class="vj_header__logo--image" src="<?php echo $logo['url']; ?>" alt="<?php echo $logo_alt; ?>">
+		<a href="<?php bloginfo('url'); ?>">
+			<img class="vj_header__logo--image" src="<?php echo $logo['url']; ?>" alt="<?php echo $logo_alt; ?>">
+		</a>
 	</div>
 	<?php wp_nav_menu(
 			array(
