@@ -1,3 +1,6 @@
+html {
+  font-size: 62.5%;
+}
 .vj_bannerimage {
   position: relative;
   height: 75vh;
@@ -162,6 +165,13 @@
   display: inline;
   margin: 0 0 0 20px;
 }
+.vj_header__menu--navigation li a {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+}
 .vj_footer {
   background: #000;
   color: #fff;
@@ -184,6 +194,13 @@
   text-align: left;
   column-count: 4;
   column-gap: 50px;
+}
+.vj_footer__row:first-of-type .vj_footer__menu--navigation a {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.6rem;
 }
 .vj_footer__row:last-of-type>ul,
 .vj_footer__row:last-of-type>div {
