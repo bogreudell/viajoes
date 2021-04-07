@@ -8,6 +8,8 @@
 		<div class="vj_summary__content--copy">
 			<?php echo $copy_text; ?>
 		</div>
+		<?php if( $link ): ?>
 		<a href="<?php echo $link; ?>" class="vj_summary__content--link"><?php echo $link_text; ?></a>
+		<?php endif; ?>
 	</div>
 </div>

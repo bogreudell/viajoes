@@ -1,1 +1,3 @@
-<h1>collection</h1>
+<div class="vj_collection">
+	<!-- silence is golden -->
+</div>

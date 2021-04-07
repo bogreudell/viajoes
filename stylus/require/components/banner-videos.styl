@@ -20,6 +20,15 @@
 			position absolute
 			verticalAlign(50%,50%,-50%,-50%)
 			text-align center
+			bannerHeader()
+			
+			strong
+				font-weight 600
+			
+			i
+				font-weight 100
+				font-size 6rem
+				margin-top $margin1
 			
 		&--player
 			position absolute
@@ -31,14 +40,16 @@
 		&--leftnav
 			position absolute
 			z-index 9
-			font-size initial
+			font-size 6rem
+			font-weight 1001
 			verticalAlign(50%,3%,0,-50%)
-			resetButtonStyles()				
+			resetButtonStyles($white)				
 
 		&--rightnav
 			position absolute
 			z-index 9
-			font-size initial
+			font-size 6rem
+			font-weight 1001
 			verticalAlign(50%,auto,0,-50%)
 			right 3%
-			resetButtonStyles()
+			resetButtonStyles($white)

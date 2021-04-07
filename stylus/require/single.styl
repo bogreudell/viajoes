@@ -1,3 +1,50 @@
 body
 	&.single
-		padding-top 85px
+		.vj_header
+			&__menu
+				&--navigation
+					li
+						a
+							color $black !important
+		
+		.vj_single
+			width 90%
+			max-width 640px
+			margin $margin4 auto
+			
+			h1
+				display block
+				width 100%
+				max-width 75%
+				margin auto
+				bannerSerif($black)
+				font-size 5rem !important
+				line-height 5.75rem !important
+				text-align center
+			
+			&__publishdate
+				margin $margin1 0
+				text-align center
+				bodyCopy($black)
+			
+			p
+				margin-bottom $margin1
+				bodyCopy($black)
+				
+				img
+					width 100%
+					height auto
+			
+				&.iframe-wrapper
+					overflow hidden
+					padding-top 56.25%
+					position relative
+					
+					iframe
+						border 0
+						height 100%
+						left 0
+						position absolute
+						top 0
+						width 100%
+

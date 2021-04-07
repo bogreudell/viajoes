@@ -8,5 +8,20 @@
 	
 	&__content
 		position absolute
+		width 90%
+		max-width 600px
 		verticalAlign(50%,50%,-50%,-50%)
 		text-align center
+		background $black
+		padding $margin2 $margin1
+		
+		&--header
+			blockHeader($white)
+			font-family $serif
+		
+		&--copy
+			margin-top $margin1
+			bodyCopy($white)
+		
+		&--link
+			linkStyles($black,$white)

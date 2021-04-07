@@ -69,8 +69,19 @@ function videoCarousel() {
 	});
 }
 
+function minimizeHeader() {
+	$(window).scroll(function(){
+		if ( $(window).scrollTop() > 0 ) { 
+			$('.vj_header').addClass('minimize');
+		} else {
+			$('.vj_header').removeClass('minimize');
+		}
+	});
+}
+
 // when to best load this?
 $(function(){
 	videoControls();
 	videoCarousel();
+	minimizeHeader();
 });

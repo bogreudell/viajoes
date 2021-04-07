@@ -1,12 +1,22 @@
 .vj_summary
 	position relative
-	height 75vh
+	padding $margin4 0
 	
 	&.with-image
 		background-position center center !important
 		background-size cover !important
 	
 	&__content
-		position absolute
-		verticalAlign(50%,50%,-50%,-50%)
+		width 90%
+		max-width 790px
+		margin auto
 		text-align center
+		
+		h1
+			blockHeader($black)
+		
+		&--copy
+			// copy type assigned on template-specific stylesheets
+		
+		&--link
+			linkStyles($white,$black)

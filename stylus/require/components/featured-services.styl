@@ -5,8 +5,25 @@
 			width 50%
 			float left
 			text-align center
+			padding-bottom 50%
+			
+			&--body
+				width 90%
+				max-width 450px
+				verticalAlign(50%,50%,-50%,-50%)
+				
+				h3
+					sectionHeader($black)
+				
+				p
+					margin-top $margin1
+					bodyCopy($black)
+				
+				a
+					linkStyles($white,$black)
 			
 		&__image
+			background-size cover !important
 			width 50%
 			float left
 			padding-bottom 50%

@@ -1,42 +1,31 @@
 .vj_footer
+	padding $margin2 0
 	background #000
 	color #fff
+	text-align center
 	
-	&__row
-		&:first-of-type
-			text-align center
-			
-			&>ul,
-			&>div
-				display inline-block
-				vertical-align top
-			
-			.vj_footer
-				&__designcredit
-					text-align left
-				
-				&__menu
-					margin-left 50px
-					
-					&--navigation
-						text-align left
-						column-count 4
-						column-gap 50px
-						
-						a
-							interactive($white)
+	&__menu
+		width 90%
+		margin auto
 		
-		&:last-of-type
-			&>ul,
-			&>div
-				display inline-block
-				vertical-align top
-				width 40%
+		&--navigation
+			column-count 4
+			column-gap 50px
+			
+			a
+				interactive($white,1.6rem)
 				
-			.vj_footer
-				&__paymenticons
-					li
-						display inline
-
-				&__devcredit
-					text-align right
+	&__paymenticons
+		margin $margin1 0
+		
+		li
+			display inline
+			font-size 3rem
+			margin 2.5px
+	
+	&__credits
+		margin-bottom 15px
+		interactive($white,1.2rem)
+		font-weight 100 !important
+		text-transform initial
+		line-height 1.38rem

@@ -1,11 +1,33 @@
 .vj_icons
-	padding 10% 0
+	padding $margin4 0
 	text-align center
+
+	&__header
+		sectionHeader($black)
+		margin-bottom $margin2
+		
+		strong
+			font-weight 600
 	
 	.vj_icon
 		display inline-block
-		width 200px
+		height 200px
+		margin 0 $margin1
 		
 		img
-			width 100%
-			height auto
+			width auto
+			height 100%
+		
+		p
+			position relative
+			margin-top $margin1
+			bodyCopy($black)
+			font-weight 600
+			text-transform uppercase
+			
+			&:before
+				content ''
+				width 30px
+				height 3px
+				background $black
+				verticalAlign(-10px,50%,-50%,0)

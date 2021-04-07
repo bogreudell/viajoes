@@ -2,24 +2,76 @@ html
 	font-size 62.5%
 
 $white = #ffffff
+$black = #000000
 $serif = 'Playfair Display', serif
 $sans_serif = 'Source Sans Pro', sans-serif
 
-// h1 - sans_serif (carousels)
-// h2 - serif (banner headers)
-// h3 - sans_serif (content block headers)
+$margin1 = 30px
+$margin2 = 60px
+$margin3 = 90px
+$margin4 = 120px
+
+bannerHeader()
+	font-family $sans_serif
+	color $white
+	font-size 4rem
+	font-weight 100
+	text-transform uppercase
+	line-height 4.6rem
+
+bannerSerif()
+	font-family $serif
+	font-weight 400
+	font-style italic
+	color $black
+	font-size 3rem
+	line-height 3.45rem
+
+bannerSans()
+	font-family $sans_serif
+	font-weight 100
+	color $black
+	font-size 3rem
+	line-height 3.45rem
+
+blockHeader(a)
+	font-family $serif
+	font-weight 400
+	font-style italic
+	color a
+	font-size 4rem
+	
+bodyCopy(a)
+	font-family $sans_serif
+	font-weight 400
+	font-size 1.6rem
+	line-height 1.84rem
+	color a
+
+sectionHeader(a)
+	font-family $sans_serif
+	font-weight 100
+	font-size 4rem
+	color a
+
+subHeader(a)
+	font-family $sans_serif
+	font-weight 600
+	font-size 2.6rem
+	line-height 3.9rem
+	color a
 // h4 - sans_serif (repeater section headers / pullquotes on what we do)
 // splash copy - serif (big text)
 // splash copy - sans_serif (big text)
 // body copy - sans_serif (paragraph)
 // interactive copy - header and foot navigation (color should be variable)
 
-interactive(a)
+interactive(a,b)
 	font-family $sans_serif
 	color a
 	text-decoration none
 	text-transform uppercase
-	font-size 1.6rem
+	font-size b
 
 verticalAlign(a,b,c,d)
 	position absolute
@@ -27,9 +79,21 @@ verticalAlign(a,b,c,d)
 	left b
 	transform translate(c,d)
 
-resetButtonStyles()
+resetButtonStyles(a)
 	border 0
 	outline 0
 	background none
 	margin 0
 	padding 0
+	color a
+	cursor pointer
+
+linkStyles(a,b)
+	display block
+	width 90%
+	max-width 300px
+	margin $margin1 auto 0
+	interactive(a,1.6rem)
+	font-weight 600
+	background b
+	padding 15px 20px

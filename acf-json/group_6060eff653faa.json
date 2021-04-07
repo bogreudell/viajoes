@@ -440,6 +440,25 @@
                     "display": "row",
                     "sub_fields": [
                         {
+                            "key": "field_606d1cde33775",
+                            "label": "Icons Header",
+                            "name": "icons_header",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
                             "key": "field_6060f036e719b",
                             "label": "Icon",
                             "name": "icon",
@@ -530,5 +549,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1616970695
+    "modified": 1617763560
 }

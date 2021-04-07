@@ -12,6 +12,7 @@
 	&__logo
 		display inline-block
 		height 65px
+		transition .2s height ease-in-out
 		
 		&--image
 			height 100%
@@ -26,4 +27,17 @@
 				margin 0 0 0 20px
 				
 				a
-					interactive($white)
+					interactive($white,1.6rem)
+	
+	&.minimize
+		background rgba(255,255,255,.98)
+		
+		.vj_header
+			&__logo
+				height 35px
+			
+			&__menu
+				&--navigation
+					li
+						a
+							color $black !important
