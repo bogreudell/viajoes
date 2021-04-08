@@ -240,14 +240,14 @@ html {
   left: 50%;
   transform: translate(-50%, 0);
 }
-.vj_services .vj_service__content {
+.vj_featured-services .vj_featured-service__content {
   position: relative;
   width: 50%;
   float: left;
   text-align: center;
   padding-bottom: 50%;
 }
-.vj_services .vj_service__content--body {
+.vj_featured-services .vj_featured-service__content--body {
   width: 90%;
   max-width: 450px;
   position: absolute;
@@ -255,13 +255,13 @@ html {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.vj_services .vj_service__content--body h3 {
+.vj_featured-services .vj_featured-service__content--body h3 {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 100;
   font-size: 4rem;
   color: #000;
 }
-.vj_services .vj_service__content--body p {
+.vj_featured-services .vj_featured-service__content--body p {
   margin-top: 30px;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
@@ -269,7 +269,7 @@ html {
   line-height: 1.84rem;
   color: #000;
 }
-.vj_services .vj_service__content--body a {
+.vj_featured-services .vj_featured-service__content--body a {
   display: block;
   width: 90%;
   max-width: 300px;
@@ -283,17 +283,17 @@ html {
   background: #000;
   padding: 15px 20px;
 }
-.vj_services .vj_service__image {
+.vj_featured-services .vj_featured-service__image {
   background-size: cover !important;
   width: 50%;
   float: left;
   padding-bottom: 50%;
 }
-.vj_services .vj_service .clear {
+.vj_featured-services .vj_featured-service .clear {
   clear: both;
 }
-.vj_services .vj_service:nth-of-type(2n) .vj_service__content,
-.vj_services .vj_service:nth-of-type(2n) .vj_service__image {
+.vj_featured-services .vj_featured-service:nth-of-type(2n) .vj_featured-service__content,
+.vj_featured-services .vj_featured-service:nth-of-type(2n) .vj_featured-service__image {
   float: right;
 }
 .vj_team {
@@ -665,4 +665,35 @@ body.single .vj_single p.iframe-wrapper iframe {
   position: absolute;
   top: 0;
   width: 100%;
+}
+body.page-template-template-contact .vj_contact {
+  background-size: cover !important;
+  padding: 120px 0;
+}
+body.page-template-template-contact .vj_contact__section {
+  width: 40%;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+body.page-template-template-contact .vj_contact__section:first-of-type {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-style: italic;
+  color: #000;
+  font-size: 3rem;
+  line-height: 3.45rem;
+}
+body.page-template-template-contact .vj_contact__section--title {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  font-size: 2.6rem;
+  line-height: 3.9rem;
+  color: #000;
+}
+body.page-template-template-contact .vj_contact__section--copy {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.84rem;
+  color: #000;
 }

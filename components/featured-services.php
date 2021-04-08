@@ -1,6 +1,6 @@
 <!-- if services exist, open services wrapper -->
 <?php if( have_rows('service') ): ?>
-<div class="vj_services">
+<div class="vj_featured-services">
 	<!-- for each service block, initiate markup -->
 	<?php while( have_rows('service' ) ): the_row(); ?>
 
@@ -13,9 +13,9 @@
 	<?php $image_url = $image['url']; ?>
 	<?php $image_alt = $image['alt']; ?>
 
-	<div class="vj_service">
-		<aside class="vj_service__content">
-			<div class="vj_service__content--body">
+	<div class="vj_featured-service">
+		<aside class="vj_featured-service__content">
+			<div class="vj_featured-service__content--body">
 				<h3><?php echo $header_text; ?></h3>
 				<p><?php echo $copy_text; ?></p>
 				<a href="<?php echo $link; ?>">
@@ -23,7 +23,7 @@
 				</a>
 			</div>
 		</aside>
-		<aside class="vj_service__image" role="img" aria-label="<?php echo $image_alt; ?>" style="background:url(<?php echo $image_url; ?>) center center no-repeat; ">
+		<aside class="vj_featured-service__image" role="img" aria-label="<?php echo $image_alt; ?>" style="background:url(<?php echo $image_url; ?>) center center no-repeat; ">
 		</aside>
 		<div class="clear"></div>
 	</div><!-- end service block markup -->

@@ -20,6 +20,10 @@ if( have_rows('primary_content') ){
 
 		} elseif( get_row_layout() == 'offerings' ){
 			include( locate_template('components/offerings.php') );
+
+		} elseif( get_row_layout() == 'contact' ){
+			include( locate_template('components/contact.php') );
+			
 		}
 	}
 }
