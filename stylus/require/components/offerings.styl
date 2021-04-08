@@ -1,0 +1,51 @@
+.vj_offerings
+	width 90%
+	max-width 950px
+	margin $margin2 auto
+	text-align center
+	
+	&__title
+		sectionHeader($black)
+		
+		strong
+			font-weight 600
+	
+	&__subheader
+		margin $margin1 auto
+		bodyCopy($black)
+	
+	&__list
+		columns 3
+		column-gap 15px
+		
+		li
+			display inline-block
+			background #eee
+			padding $margin1 15px
+			margin-bottom 15px
+			vertical-align top
+						
+			img
+				width 100%
+				height auto
+				margin-bottom $margin1
+			
+			.vj_item
+				&--count
+					position relative
+					subHeader($white)
+					
+					&:before
+						content ''
+						width $margin1
+						height 5px
+						background $white
+						top 0
+						left 0
+						verticalAlign(0,50%,-50%,0)
+					
+				&--title
+					subHeader($black)
+				
+				&--copy
+					bodyCopy($black)

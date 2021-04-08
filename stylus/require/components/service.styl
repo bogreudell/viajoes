@@ -1,0 +1,54 @@
+.vj_service
+	width 90%
+	max-width 950px
+	margin 0 auto $margin2
+	
+	&__title
+		sectionHeader($black)
+		
+		strong
+			font-weight 600
+	
+	&__copy
+		margin $margin1 0
+		column-count 2
+		column-gap $margin1
+		
+		p
+			display inline-block
+			margin-bottom 15px
+			bodyCopy($black)
+	
+	&__iframewrap
+		overflow hidden
+		padding-top 56.25%
+		position relative
+
+		iframe
+			border 0
+			height 100%
+			left 0
+			position absolute
+			top 0
+			width 100%
+	
+	&__videocaption
+		margin $margin1 0 $margin2
+		bodyCopy($black)
+	
+	&__images
+		img
+			width 49%
+			height auto
+			float left
+			
+			&:first-of-type
+				margin-right 2%
+			
+			.clear
+				clear both
+	
+	&__fullimage
+		img
+			width 100%
+			height auto
