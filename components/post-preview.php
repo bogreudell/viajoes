@@ -8,8 +8,14 @@
 <div class="vj_blogpreview">
 	<aside class="vj_blogpreview__image" role="img" aria-label="<?php echo $image_alt; ?>" style="background-image:url(<?php echo $image_url; ?>);"></aside>
 	<aside class="vj_blogpreview__text">
-		<h1><?php echo $post_title; ?></h1>
-		<p><?php echo $post_excerpt; ?></p>
-		<a href="<?php echo $post_link; ?>">Continue Reading</a>
+		<div class="vj_blogpreview__text--copy">
+			<h1><?php echo $post_title; ?></h1>
+			<p><?php echo $post_excerpt; ?></p>
+			<a href="<?php echo $post_link; ?>">
+				<span>Continue Reading</span>
+				<i class="far fa-long-arrow-alt-right"></i>
+			</a>
+		</div>
 	</aside>
+	<div class="clear"></div>
 </div>

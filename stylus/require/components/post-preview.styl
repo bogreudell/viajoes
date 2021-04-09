@@ -1,0 +1,55 @@
+.vj_blogpreview
+	width 90%
+	max-width 980px
+	margin $margin1 auto 0
+	
+	&__image
+		float left
+		width 60%
+		padding-bottom 50%
+		background-size cover
+		background-position center center
+		background-repeat no-repeat
+	
+	&__text
+		float left
+		width 40%
+		position relative
+		padding-bottom 50%
+		
+		&--copy
+			verticalAlign(50%,0,-5%,-50%)
+			background $white
+			box-sizing border-box
+			padding $margin1
+			
+			h1
+				width 60%
+				blockHeader($black)
+			
+			p
+				margin $margin1 0
+				bodyCopy($black)
+			
+			a
+				display block
+				text-align right
+				interactive($black,1.2rem)
+				font-weight 600
+			
+	
+	&:nth-of-type(odd)
+		.vj_blogpreview
+			&__image
+				float right
+				
+			&__text
+				float right
+				text-align right
+				left 5% !important
+				
+				h1
+					margin-left auto
+	
+	.clear
+		clear both
