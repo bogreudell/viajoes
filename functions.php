@@ -42,3 +42,13 @@ function vj_footer_menu() {
   register_nav_menu('footer-menu',__( 'Footer Menu' ));
 }
 add_action( 'init', 'vj_footer_menu' );
+
+// declare Woocommerce support
+function mytheme_add_woocommerce_support() {
+    add_theme_support( 'woocommerce' );
+}
+
+add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
+
+// disable woocommerce styles
+add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );

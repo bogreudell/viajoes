@@ -587,7 +587,45 @@
                     "name": "collection",
                     "label": "Collection",
                     "display": "row",
-                    "sub_fields": [],
+                    "sub_fields": [
+                        {
+                            "key": "field_606fc311e3acb",
+                            "label": "Featured Products",
+                            "name": "featured_products",
+                            "type": "post_object",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "product"
+                            ],
+                            "taxonomy": "",
+                            "allow_null": 0,
+                            "multiple": 1,
+                            "return_format": "object",
+                            "ui": 1
+                        },
+                        {
+                            "key": "field_606fc44b3070e",
+                            "label": "See More Link",
+                            "name": "see_more_link",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array"
+                        }
+                    ],
                     "min": "",
                     "max": ""
                 },
@@ -688,5 +726,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1616965723
+    "modified": 1617937500
 }
