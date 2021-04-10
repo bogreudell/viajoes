@@ -1,0 +1,114 @@
+body
+	&.woocommerce-cart
+		padding-top 85px
+		
+		.vj_header
+			&__menu
+				&--navigation
+					li
+						a
+							color $black !important
+							
+		main
+			article
+				header
+					h1
+						margin $margin1 0
+						text-align center
+						blockHeader($black)
+					
+					.post-edit-link
+						display none
+				
+				.entry-content
+					.woocommerce
+						&-cart-form
+							bodyCopy($black)
+							
+							table
+								margin auto
+								
+								th
+									vertical-align top
+									text-align left
+									padding $margin1 $margin2
+									font-weight 600
+
+								td
+									vertical-align top
+									text-align left
+									padding $margin1 $margin2
+
+									img
+										height 100px
+										width auto
+									a
+										interactive($black,1.6rem)
+										font-weight 600
+									
+									&.product-remove
+										a
+											font-size 3rem !important
+									
+									&.product-quantity
+										input
+											border 0
+											border-bottom 2px solid $black
+											interactive($black,1.6rem)
+											text-align center
+											
+											&:focus
+												outline none
+									
+									&.actions											
+										.coupon
+											text-align center
+											
+											label
+												display none
+											
+											#coupon_code
+												border-top 0
+												border-right 0
+												border-bottom 2px solid $black
+												border-left 0
+												interactive($black,1.6rem)
+												padding-bottom 5px
+												margin-right 5px
+												
+												&:focus
+													outline none
+											
+											button
+												resetButtonStyles($white)
+												background $black
+												interactive($white,1.6rem)
+												padding 10px 15px
+												border 0
+										
+										&>.button
+											margin $margin1 auto
+											display block
+											background $black
+											interactive($white,1.6rem)
+											padding 5px 15px
+											border 0
+											
+											&[disabled]
+												background #666
+												
+				.cart-collaterals
+					text-align center
+					margin-bottom $margin4
+					
+					.cart_totals
+						h2
+							blockHeader($black)
+					
+					table
+						margin $margin1 auto
+						bodyCopy($black)
+					
+					.wc-proceed-to-checkout
+						a
+							linkStyles($white,$black)

@@ -1070,3 +1070,384 @@ body.page-template-template-contact .vj_contact__section--copy {
   line-height: 1.84rem;
   color: #000;
 }
+body.woocommerce-cart {
+  padding-top: 85px;
+}
+body.woocommerce-cart .vj_header__menu--navigation li a {
+  color: #000 !important;
+}
+body.woocommerce-cart main article header h1 {
+  margin: 30px 0;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-style: italic;
+  color: #000;
+  font-size: 4rem;
+}
+body.woocommerce-cart main article header .post-edit-link {
+  display: none;
+}
+body.woocommerce-cart main article .entry-content .woocommerce-cart-form {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.84rem;
+  color: #000;
+}
+body.woocommerce-cart main article .entry-content .woocommerce-cart-form table {
+  margin: auto;
+}
+body.woocommerce-cart main article .entry-content .woocommerce-cart-form table th {
+  vertical-align: top;
+  text-align: left;
+  padding: 30px 60px;
+  font-weight: 600;
+}
+body.woocommerce-cart main article .entry-content .woocommerce-cart-form table td {
+  vertical-align: top;
+  text-align: left;
+  padding: 30px 60px;
+}
+body.woocommerce-cart main article .entry-content .woocommerce-cart-form table td img {
+  height: 100px;
+  width: auto;
+}
+body.woocommerce-cart main article .entry-content .woocommerce-cart-form table td a {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+body.woocommerce-cart main article .entry-content .woocommerce-cart-form table td.product-remove a {
+  font-size: 3rem !important;
+}
+body.woocommerce-cart main article .entry-content .woocommerce-cart-form table td.product-quantity input {
+  border: 0;
+  border-bottom: 2px solid #000;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  text-align: center;
+}
+body.woocommerce-cart main article .entry-content .woocommerce-cart-form table td.product-quantity input:focus {
+  outline: none;
+}
+body.woocommerce-cart main article .entry-content .woocommerce-cart-form table td.actions .coupon {
+  text-align: center;
+}
+body.woocommerce-cart main article .entry-content .woocommerce-cart-form table td.actions .coupon label {
+  display: none;
+}
+body.woocommerce-cart main article .entry-content .woocommerce-cart-form table td.actions .coupon #coupon_code {
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 2px solid #000;
+  border-left: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  padding-bottom: 5px;
+  margin-right: 5px;
+}
+body.woocommerce-cart main article .entry-content .woocommerce-cart-form table td.actions .coupon #coupon_code:focus {
+  outline: none;
+}
+body.woocommerce-cart main article .entry-content .woocommerce-cart-form table td.actions .coupon button {
+  border: 0;
+  outline: 0;
+  background: none;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  cursor: pointer;
+  background: #000;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  padding: 10px 15px;
+  border: 0;
+}
+body.woocommerce-cart main article .entry-content .woocommerce-cart-form table td.actions>.button {
+  margin: 30px auto;
+  display: block;
+  background: #000;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  padding: 5px 15px;
+  border: 0;
+}
+body.woocommerce-cart main article .entry-content .woocommerce-cart-form table td.actions>.button[disabled] {
+  background: #666;
+}
+body.woocommerce-cart main article .cart-collaterals {
+  text-align: center;
+  margin-bottom: 120px;
+}
+body.woocommerce-cart main article .cart-collaterals .cart_totals h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-style: italic;
+  color: #000;
+  font-size: 4rem;
+}
+body.woocommerce-cart main article .cart-collaterals table {
+  margin: 30px auto;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.84rem;
+  color: #000;
+}
+body.woocommerce-cart main article .cart-collaterals .wc-proceed-to-checkout a {
+  display: block;
+  width: 90%;
+  max-width: 300px;
+  margin: 30px auto 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 600;
+  background: #000;
+  padding: 15px 20px;
+}
+body.woocommerce-checkout {
+  padding-top: 85px;
+}
+body.woocommerce-checkout .vj_header__menu--navigation li a {
+  color: #000 !important;
+}
+body.woocommerce-checkout main {
+  text-align: center;
+}
+body.woocommerce-checkout main article header h1 {
+  padding-top: 30px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-style: italic;
+  color: #000;
+  font-size: 4rem;
+}
+body.woocommerce-checkout main article header .post-edit-link {
+  display: none;
+}
+body.woocommerce-checkout main article .woocommerce-notices-wrapper {
+  margin: 30px auto;
+}
+body.woocommerce-checkout main article .woocommerce-info {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.84rem;
+  color: #000;
+}
+body.woocommerce-checkout main article .woocommerce-info a {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.84rem;
+  color: #000;
+  font-weight: 600;
+}
+body.woocommerce-checkout main article .woocommerce-form-coupon {
+  margin-top: 30px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.84rem;
+  color: #000;
+}
+body.woocommerce-checkout main article .woocommerce-form-coupon>p {
+  margin-bottom: 15px;
+}
+body.woocommerce-checkout main article .woocommerce-form-coupon .form-row {
+  display: inline-block;
+}
+body.woocommerce-checkout main article .woocommerce-form-coupon .form-row #coupon_code {
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 2px solid #000;
+  border-left: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  padding-bottom: 5px;
+  margin-right: 5px;
+}
+body.woocommerce-checkout main article .woocommerce-form-coupon .form-row #coupon_code:focus {
+  outline: none;
+}
+body.woocommerce-checkout main article .woocommerce-form-coupon .form-row button {
+  border: 0;
+  outline: 0;
+  background: none;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  cursor: pointer;
+  background: #000;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  padding: 10px 15px;
+  border: 0;
+}
+body.woocommerce-checkout main article .woocommerce-checkout .woocommerce-billing-fields h3 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  font-size: 2.6rem;
+  line-height: 3.9rem;
+  color: #000;
+}
+body.woocommerce-checkout main article .woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row {
+  width: 90%;
+  max-width: 300px;
+  margin: auto;
+}
+body.woocommerce-checkout main article .woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row label {
+  margin: 30px 0 15px;
+  display: block;
+  text-align: left;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.84rem;
+  color: #000;
+}
+body.woocommerce-checkout main article .woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row input {
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #000;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  text-transform: initial !important;
+  padding-bottom: 5px;
+}
+body.woocommerce-checkout main article .woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row input:focus {
+  outline: none;
+}
+body.woocommerce-checkout main article .woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row.address-field {
+  margin-bottom: 15px;
+}
+body.woocommerce-checkout main article .woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row:last-of-type {
+  margin-bottom: 0;
+}
+body.woocommerce-checkout main article .woocommerce-additional-fields {
+  margin: 30px auto 0;
+  width: 90%;
+  max-width: 300px;
+}
+body.woocommerce-checkout main article .woocommerce-additional-fields h3 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  font-size: 2.6rem;
+  line-height: 3.9rem;
+  color: #000;
+}
+body.woocommerce-checkout main article .woocommerce-additional-fields label {
+  margin: 30px 0 15px;
+  display: block;
+  text-align: left;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.84rem;
+  color: #000;
+}
+body.woocommerce-checkout main article .woocommerce-additional-fields .woocommerce-input-wrapper {
+  width: 100%;
+}
+body.woocommerce-checkout main article .woocommerce-additional-fields .woocommerce-input-wrapper textarea {
+  width: 100%;
+  resize: none;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.84rem;
+  color: #000;
+  border: 0;
+  border-bottom: 2px solid #000;
+  padding-bottom: 5px;
+}
+body.woocommerce-checkout main article .woocommerce #order_review_heading {
+  margin: 30px 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  font-size: 2.6rem;
+  line-height: 3.9rem;
+  color: #000;
+}
+body.woocommerce-checkout main article .woocommerce table {
+  margin: 0 auto 30px;
+}
+body.woocommerce-checkout main article .woocommerce table tr {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.84rem;
+  color: #000;
+  text-align: left;
+}
+body.woocommerce-checkout main article .woocommerce table th {
+  font-weight: 600;
+}
+body.woocommerce-checkout main article .woocommerce table td {
+  padding: 15px 0;
+}
+body.woocommerce-checkout main article .woocommerce table td:first-of-type {
+  padding-right: 30px;
+}
+body.woocommerce-checkout main article .woocommerce table td:last-of-type {
+  text-align: right;
+}
+body.woocommerce-checkout main article .woocommerce table tfoot td {
+  padding-right: 0 !important;
+  text-align: right;
+}
+body.woocommerce-checkout main article .woocommerce-checkout-payment {
+  margin-bottom: 120px;
+}
+body.woocommerce-checkout main article .woocommerce-checkout-payment .woocommerce-privacy-policy-text {
+  display: none;
+}
+body.woocommerce-checkout main article .woocommerce-checkout-payment #place_order {
+  border: 0;
+  outline: 0;
+  background: none;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  width: 90%;
+  max-width: 300px;
+  margin: 30px auto 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 600;
+  background: #000;
+  padding: 15px 20px;
+}
