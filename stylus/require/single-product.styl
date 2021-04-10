@@ -1,0 +1,106 @@
+body
+	&.single-product
+		padding-top 85px
+		
+		main
+			.woocommerce
+				&-breadcrumb
+					width 90%
+					margin $margin2 auto 0
+					interactive($black,1.2rem)
+					font-weight 600
+					
+					a
+						interactive($black,1.2rem)
+						font-weight 200
+				
+				&-notices-wrapper
+					margin $margin1 auto
+					width 90%
+					interactive($black,1.2rem)
+					font-weight 200
+					
+					a
+						interactive($black,1.2rem)
+						font-weight 600
+			
+			.product
+				width 90%
+				margin auto
+				
+				.vj_product						
+					&__images
+						float left
+						width 60%
+						
+						&--navigation
+							float left
+							width 15%
+							border-right 3px solid $white
+							box-sizing border-box
+							
+							img
+								width 100%
+								margin-bottom 1px
+								
+								&:hover
+									cursor pointer
+							
+						&--main
+							float left
+							width 85%
+						
+						.clear
+							clear both
+					
+					&__summary
+						float left
+						width 37%
+						padding-left 3%
+						bodyCopy($black)
+						
+						h1
+							sectionHeader($black)
+						
+						.price
+							margin $margin1 0
+						
+						.input-text.qty
+							border 0
+							border-bottom 2px solid $black
+							interactive($black,1.6rem)
+							text-align center
+							
+							&:focus
+								outline none
+								
+						.woocommerce-product-details__short-description
+							margin-bottom $margin1
+						
+						.single_add_to_cart_button
+							resetButtonStyles($black)
+							linkStyles($white,$black)
+							margin-left 0
+							margin-right auto
+							
+						.product_meta
+							margin-top $margin1
+							
+							a
+								interactive($black,1.6rem)
+								font-weight 600
+					
+					.clear
+						clear both
+				
+				.vj_products
+					width 100%
+					margin $margin2 0 $margin4
+					text-align center
+					
+					h3
+						blockHeader($black)
+						margin-bottom $margin1
+					
+					&__thumbnail
+						width 24%

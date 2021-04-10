@@ -79,9 +79,18 @@ function minimizeHeader() {
 	});
 }
 
+function productImagesNav() {
+	$('.vj_product__images--navigation img').on('click',function(){
+		var $targetUrl = $(this).attr('src');
+
+		$('.vj_product__images--main').attr('src',$targetUrl);
+	});
+}
+
 // when to best load this?
 $(function(){
 	videoControls();
 	videoCarousel();
 	minimizeHeader();
+	productImagesNav();
 });

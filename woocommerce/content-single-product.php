@@ -18,6 +18,9 @@
 defined( 'ABSPATH' ) || exit;
 
 global $product;
+$featured_image_id = get_post_thumbnail_id();
+$featured_image_url = get_the_post_thumbnail_url();
+$featured_image_alt = get_post_meta($featured_image_id,'_wp_attachment_image_alt', true);
 $gallery_images = $product->get_gallery_image_ids();
 $related_products = get_field('related_products');
 
@@ -35,38 +38,54 @@ if ( post_password_required() ) {
 ?>
 <div id="product-<?php the_ID(); ?>" <?php wc_product_class( '', $product ); ?>>
 
-	<?php foreach( $gallery_images as $image ): ?>
-		<?php $image_url = wp_get_attachment_url( $image ); ?>
-		<?php $image_alt = get_post_meta( $image, '_wp_attachment_image_alt', TRUE ); ?>
-		<img src="<?php echo $image_url; ?>" alt="<?php echo $image_alt; ?>">
-	<?php endforeach; ?>
+	<div class="vj_product">
+		<div class="vj_product__images">
+			<div class="vj_product__images--navigation">
+				<img src="<?php echo $featured_image_url; ?>" alt="<?php echo $featured_image_alt; ?>">
+				<?php foreach( $gallery_images as $image ): ?>
+					<?php $image_url = wp_get_attachment_url( $image ); ?>
+					<?php $image_alt = get_post_meta( $image, '_wp_attachment_image_alt', TRUE ); ?>
+					<img src="<?php echo $image_url; ?>" alt="<?php echo $image_alt; ?>">
+				<?php endforeach; ?>
+			</div>
+			<img class="vj_product__images--main" src="<?php echo $featured_image_url; ?>" alt="<?php echo $featured_image_alt; ?>">
+			<div class="clear"></div>
+		</div>
 
-	<div class="summary entry-summary">
-		<?php
-		/**
-		 * Hook: woocommerce_single_product_summary.
-		 *
-		 * @hooked woocommerce_template_single_title - 5
-		 * @hooked woocommerce_template_single_rating - 10
-		 * @hooked woocommerce_template_single_price - 10
-		 * @hooked woocommerce_template_single_excerpt - 20
-		 * @hooked woocommerce_template_single_add_to_cart - 30
-		 * @hooked woocommerce_template_single_meta - 40
-		 * @hooked woocommerce_template_single_sharing - 50
-		 * @hooked WC_Structured_Data::generate_product_data() - 60
-		 */
-		do_action( 'woocommerce_single_product_summary' );
-		?>
+		<div class="vj_product__summary summary entry-summary">
+			<?php
+			/**
+			 * Hook: woocommerce_single_product_summary.
+			 *
+			 * @hooked woocommerce_template_single_title - 5
+			 * @hooked woocommerce_template_single_rating - 10
+			 * @hooked woocommerce_template_single_price - 10
+			 * @hooked woocommerce_template_single_excerpt - 20
+			 * @hooked woocommerce_template_single_add_to_cart - 30
+			 * @hooked woocommerce_template_single_meta - 40
+			 * @hooked woocommerce_template_single_sharing - 50
+			 * @hooked WC_Structured_Data::generate_product_data() - 60
+			 */
+			do_action( 'woocommerce_single_product_summary' );
+			?>
+		</div>
+
+		<div class="clear"></div>
 	</div>
 
-	<?php 
-	if( $related_products ){
+	<?php if( $related_products ){
+
+		echo '<ul class="vj_products">'.
+			 '<h3>Related <strong>Products<strong></h3>';
+
 		foreach( $related_products as $post ){
 			setup_postdata( $post );
 
 			include( locate_template('components/product-thumbnail.php') );
 		}
 		wp_reset_postdata();
+
+		echo '</ul>';
 	}
 	?>
 </div>

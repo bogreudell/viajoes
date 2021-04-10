@@ -1,0 +1,42 @@
+.vj_products
+	width 90%
+	margin auto
+	
+	a
+		interactive($black,1.6rem)
+		font-weight 600
+	
+	&__thumbnail
+		display inline-block
+		overflow hidden
+		vertical-align top
+		padding 1%
+		box-sizing border-box
+		text-align left
+		
+	&__images
+		&--thumbnail,
+		&--rollover
+			width 100%
+			padding-bottom 133%
+			background-position center center
+			background-size cover
+		
+		&--rollover
+			display none
+		
+		&:hover
+			.vj_products__images
+				&--thumbnail
+					display none
+				
+				&--rollover
+					display block
+	
+	&__noimages
+		width 100%
+		padding-bottom 133%
+		background #eee
+	
+	&__title
+		margin-top 15px
