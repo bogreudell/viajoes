@@ -5,7 +5,7 @@
 
 <li class="vj_products__thumbnail">
 	<a href="<?php the_permalink(); ?>">
-		<div class="vj_products__images">
+		<div class="vj_products__images<?php if( $rollover_image ): ?> with-rollover<?php endif; ?>">
 			<!-- post thumbnail -->
 			<?php if( $product_thumbnail_url ): ?>
 			<div class="vj_products__images--thumbnail" role="img" aria-label="<?php echo $rollover_image['alt']; ?>" style="background-image:url(<?php echo $product_thumbnail_url; ?>); ?>"></div>

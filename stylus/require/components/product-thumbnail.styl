@@ -21,17 +21,18 @@
 			padding-bottom 133%
 			background-position center center
 			background-size cover
-		
+
 		&--rollover
 			display none
 		
-		&:hover
-			.vj_products__images
-				&--thumbnail
-					display none
-				
-				&--rollover
-					display block
+		&.with-rollover
+			&:hover
+				.vj_products__images
+					&--thumbnail
+						display none
+					
+					&--rollover
+						display block
 	
 	&__noimages
 		width 100%

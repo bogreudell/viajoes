@@ -4,6 +4,8 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<meta name="viewport" content="width=device-width" />
 
+	<title>Viajoes | <?php the_title(); ?></title>
+
 	<!-- typefaces from google -->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">

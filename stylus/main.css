@@ -726,10 +726,10 @@ html {
 .vj_products__images--rollover {
   display: none;
 }
-.vj_products__images:hover .vj_products__images--thumbnail {
+.vj_products__images.with-rollover:hover .vj_products__images--thumbnail {
   display: none;
 }
-.vj_products__images:hover .vj_products__images--rollover {
+.vj_products__images.with-rollover:hover .vj_products__images--rollover {
   display: block;
 }
 .vj_products__noimages {
