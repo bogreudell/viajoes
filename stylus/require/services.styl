@@ -10,10 +10,21 @@ body
 				background $red
 		
 		.vj_contact
-			background-position right
-			
 			&__section
-				width 90%
-				margin-left auto
-				margin-right auto
-				text-align center
+				color $white
+				
+				&--title,
+				&--copy
+					color $white
+
+@media all and (max-width:$mobile)
+	body
+		&.page-template-template-services
+			.vj_contact
+				background-position right
+				
+				&__section
+					width 90%
+					margin-left auto
+					margin-right auto
+					text-align center

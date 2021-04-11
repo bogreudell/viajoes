@@ -17,7 +17,7 @@
 			<h1><?php echo $video_text; ?></h1>
 			<i class="far fa-play-circle"></i>
 		</div>
-		<video class="vj_video__slide--player" playsinline muted <?php if( $video_still_image ): ?>poster="<?php echo $video_still_image; ?>"<?php endif; ?>>
+		<video class="vj_video__slide--player" playsinline <?php if( $video_still_image ): ?>poster="<?php echo $video_still_image; ?>"<?php endif; ?>>
 			<?php if( $hd_streaming ): ?>
 			<source src="<?php echo $hd_streaming; ?>" type="video/mp4">
 			<?php endif; ?>

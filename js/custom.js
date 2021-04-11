@@ -1,7 +1,8 @@
 var $ = jQuery;
 
 function videoControls(){
-	var $videoSlides = $('.vj_video__slide'),
+	var $videoWrapperBefore = $('.vj_video:before'),
+		$videoSlides = $('.vj_video__slide'),
 		$videoControls = $('.vj_video button');
 
 	// play/pause features for individual video slides
@@ -13,6 +14,7 @@ function videoControls(){
 
 		$text.toggle();
 		$videoControls.toggle();
+		$(this).children('video').addClass('playing');;
 
 		if ( $video.paused ) {
 			$video.play();

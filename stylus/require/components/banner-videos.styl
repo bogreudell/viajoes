@@ -6,6 +6,16 @@
 	white-space nowrap
 	font-size 0 /* override space between inline child elements */
 	
+	// &:before
+	// 	content ''
+	// 	position absolute
+	// 	top 0
+	// 	left 0
+	// 	width 100%
+	// 	height 100%
+	// 	background rgba(0,0,0,.25)
+	// 	z-index 5
+	
 	&__slide
 		display inline-block
 		width 100%
@@ -14,6 +24,7 @@
 		overflow hidden
 		font-size initial /* reset font-size for child elements */
 		cursor pointer
+		background $black
 		
 		&--text
 			z-index 5
@@ -36,6 +47,11 @@
 			min-height 100%
 			verticalAlign(50%,50%,-50%,-50%)
 			object-fit cover
+			
+			&.playing
+				min-width none
+				height 100%
+				object-fit contain
 	
 	&__controls
 		&--leftnav

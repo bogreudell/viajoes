@@ -1,6 +1,7 @@
 <?php /* Template name: About */ get_header();
 
-include( locate_template('components/banner-image.php') );
+include( locate_template('components/banner-videos.php') );
+// include( locate_template('components/banner-image.php') );
 
 if ( have_rows('primary_content') ) {
 	while ( have_rows('primary_content') ) {

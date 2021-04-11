@@ -15,7 +15,7 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.2);
+  background: rgba(0,0,0,0.25);
 }
 .vj_bannerimage__text {
   font-family: 'Source Sans Pro', sans-serif;
@@ -55,6 +55,7 @@ html {
   overflow: hidden;
   font-size: initial /* reset font-size for child elements */;
   cursor: pointer;
+  background: #000;
 }
 .vj_video__slide--text {
   z-index: 5;
@@ -88,6 +89,11 @@ html {
   left: 50%;
   transform: translate(-50%, -50%);
   object-fit: cover;
+}
+.vj_video__slide--player.playing {
+  min-width: none;
+  height: 100%;
+  object-fit: contain;
 }
 .vj_video__controls--leftnav {
   position: absolute;
@@ -907,14 +913,23 @@ body.page-template-template-services .vj_banner {
 body.page-template-template-services .vj_banner__content {
   background: #a33b2e;
 }
-body.page-template-template-services .vj_contact {
-  background-position: right;
-}
 body.page-template-template-services .vj_contact__section {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
+  color: #fff;
+}
+body.page-template-template-services .vj_contact__section--title,
+body.page-template-template-services .vj_contact__section--copy {
+  color: #fff;
+}
+@media all and (max-width: 740px) {
+  body.page-template-template-services .vj_contact {
+    background-position: right;
+  }
+  body.page-template-template-services .vj_contact__section {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
 }
 body.page-template-template-sustainability .vj_bannerimage {
   text-align: center;
@@ -1249,7 +1264,7 @@ body.page-template-template-contact .vj_contact__section:first-of-type {
   font-family: 'Playfair Display', serif;
   font-weight: 400;
   font-style: italic;
-  color: #000;
+  color: #fff;
   font-size: 3rem;
   line-height: 3.45rem;
 }
@@ -1258,14 +1273,14 @@ body.page-template-template-contact .vj_contact__section--title {
   font-weight: 600;
   font-size: 2.6rem;
   line-height: 3.9rem;
-  color: #000;
+  color: #fff;
 }
 body.page-template-template-contact .vj_contact__section--copy {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.84rem;
-  color: #000;
+  color: #fff;
 }
 body.woocommerce-cart {
   padding-top: 85px;
