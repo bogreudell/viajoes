@@ -6,6 +6,7 @@
 			float left
 			text-align center
 			padding-bottom 50%
+			background $grey
 			
 			&--body
 				width 90%
@@ -20,7 +21,7 @@
 					bodyCopy($black)
 				
 				a
-					linkStyles($white,$black)
+					linkStyles($white,$blue)
 			
 		&__image
 			background-size cover !important
@@ -36,3 +37,22 @@
 				&__content,
 				&__image
 					float right
+
+@media all and (max-width:$mobile)
+	.vj_featured-services
+		.vj_featured-service
+			&__content
+				width 100% !important
+				float none !important
+				padding 10% 0
+				
+				&--body
+					position relative
+					transform none
+					top initial
+					left initial
+					margin auto
+				
+			&__image
+				width 100% !important
+				float none !important

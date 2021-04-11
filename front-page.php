@@ -13,12 +13,16 @@ if ( have_rows('primary_content') ) {
 			include( locate_template('components/executive-summary.php') );
 
 		} elseif ( get_row_layout() == 'primary_banner' ) {
+			$banner_id = 'vj_our_services';
+
 			include( locate_template('components/content-banner.php') );
 
 		} elseif ( get_row_layout() == 'featured_services' ) {
 			include( locate_template('components/featured-services.php') );
 
 		} elseif ( get_row_layout() == 'secondary_banner' ) {
+			$banner_id = 'vj_sustainability';
+			
 			include( locate_template('components/content-banner.php') );
 
 		} elseif ( get_row_layout() == 'collection' ) {

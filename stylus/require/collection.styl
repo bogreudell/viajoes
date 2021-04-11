@@ -40,3 +40,20 @@ body
 			
 			&_woocommerce_filter
 				color $black !important
+
+@media all and (max-width:$mobile)
+	body
+		&.post-type-archive-product
+			.vj_products
+				&__thumbnail
+					width 48%
+				
+				&__title
+					margin-bottom $margin1
+			
+			.woocommerce
+				&-pagination			
+					.page-numbers
+						li
+							display inline-block
+							margin 0 15px 0 0

@@ -20,15 +20,16 @@
 		
 		li
 			display inline-block
-			background #eee
+			background $beige
 			padding $margin1 15px
 			margin-bottom 15px
 			vertical-align top
 						
 			img
-				width 100%
-				height auto
-				margin-bottom $margin1
+				display none
+				// width 100%
+				// height auto
+				// margin-bottom $margin1
 			
 			.vj_item
 				&--count
@@ -49,3 +50,12 @@
 				
 				&--copy
 					bodyCopy($black)
+
+@media all and (max-width:$mobile)
+	.vj_offerings
+		&__list
+			column-count 1
+			column-gap 0
+			
+			&--item
+				width 100%

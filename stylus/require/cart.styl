@@ -112,3 +112,16 @@ body
 					.wc-proceed-to-checkout
 						a
 							linkStyles($white,$black)
+
+@media all and (max-width:$mobile)
+	.woocommerce
+		&-cart-form
+			table
+				th,
+				td
+					padding 0 5px $margin1 5px !important
+					
+					&.product-thumbnail,
+					&.product-subtotal,
+					&.product-price
+						display none

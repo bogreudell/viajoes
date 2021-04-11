@@ -7,3 +7,32 @@ body
 					
 					strong
 						font-weight 600
+
+			&.with-image
+				.vj_summary__content--copy
+					color $white !important
+					
+					h1
+						color $white !important
+		
+		.vj_banner
+			&.with-image
+				background-attachment initial !important
+								
+			&__content
+				background $green
+
+		.vj_icons
+			background $beige
+
+@media all and (max-width:$mobile)
+	body
+		&.page-template-template-about
+			.vj_contact
+				background-position right
+				
+				&__section
+					width 90%
+					margin-left auto
+					margin-right auto
+					text-align center

@@ -61,6 +61,7 @@ body
 						
 						h1
 							sectionHeader($black)
+							line-height 4.6rem
 						
 						.price
 							margin $margin1 0
@@ -104,3 +105,27 @@ body
 					
 					&__thumbnail
 						width 24%
+
+@media all and (max-width:$mobile)
+	body
+		&.single-product
+			main
+				.product
+					.vj_product
+						&__images
+							width 90%
+							margin auto
+							float none
+							
+						&__summary
+							width 90%
+							margin $margin1 auto 0
+							float none
+							padding-left 0
+						
+					.vj_products
+						&__thumbnail
+							width 48%
+						
+						&__title
+							margin-bottom $margin1

@@ -11,12 +11,14 @@
 	
 	.vj_icon
 		display inline-block
-		height 200px
-		margin 0 $margin1
+		width 70%
+		max-width 125px
+		margin 0 $margin2
+		vertical-align middle
 		
 		img
-			width auto
-			height 100%
+			width 100%
+			height auto
 		
 		p
 			position relative
@@ -31,3 +33,12 @@
 				height 3px
 				background $black
 				verticalAlign(-10px,50%,-50%,0)
+
+@media all and (max-width:$mobile)
+	.vj_icons
+		.vj_icon
+			display block
+			margin $margin3 auto 0
+			
+			&:first-of-type
+				margin-top 0

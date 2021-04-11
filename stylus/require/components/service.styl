@@ -18,6 +18,10 @@
 			display inline-block
 			margin-bottom 15px
 			bodyCopy($black)
+			
+			strong
+				subHeader($black)
+				line-height 2.99rem
 	
 	&__iframewrap
 		overflow hidden
@@ -45,10 +49,21 @@
 			&:first-of-type
 				margin-right 2%
 			
-			.clear
-				clear both
+		.clear
+			clear both
 	
 	&__fullimage
 		img
 			width 100%
 			height auto
+
+@media all and (max-width:$mobile)
+	.vj_service
+		&__copy
+			column-count 1
+			column-gap 0
+			
+			p
+				strong
+					bodyCopy($black)
+					font-weight 600

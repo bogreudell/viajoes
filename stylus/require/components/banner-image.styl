@@ -4,6 +4,15 @@
 	background-position center center
 	background-size cover
 	background-attachment fixed
+	
+	&:before
+		content ''
+		position absolute
+		top 0
+		left 0
+		width 100%
+		height 100%
+		background rgba(0,0,0,.2)
 
 	&__text
 		bannerHeader()
@@ -11,3 +20,10 @@
 		
 		strong
 			font-weight 600
+
+@media all and (max-width:$mobile)
+	.vj_bannerimage
+		&__text
+			width 90%
+			margin auto
+			text-align center
