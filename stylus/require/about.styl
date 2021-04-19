@@ -14,7 +14,11 @@ body
 					
 					h1
 						color $white !important
-		
+
+			&:nth-of-type(3)
+				.vj_summary__content
+					max-width 870px !important
+				
 		.vj_banner
 			&.with-image
 				background-attachment initial !important
@@ -23,7 +27,11 @@ body
 				background $green
 
 		.vj_icons
+			padding $margin3 0
 			background $beige
+			
+			.vj_icon
+				vertical-align middle
 
 @media all and (max-width:$mobile)
 	body

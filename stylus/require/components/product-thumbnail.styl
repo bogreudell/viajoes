@@ -3,7 +3,7 @@
 	margin auto
 	
 	a
-		interactive($black,1.6rem)
+		interactive($blue,1.6rem)
 		font-weight 600
 	
 	&__thumbnail
@@ -12,7 +12,8 @@
 		vertical-align top
 		padding 1%
 		box-sizing border-box
-		text-align left
+		text-align center
+		text-transform capitalize
 		
 	&__images
 		&--thumbnail,
@@ -41,6 +42,7 @@
 	
 	&__title
 		margin-top 15px
+		text-transform capitalize
 
 @media all and (max-width:$mobile)
 	.vj_collection

@@ -1,6 +1,5 @@
 .vj_service
 	width 90%
-	max-width 950px
 	margin 0 auto $margin2
 	
 	&__title
@@ -67,3 +66,7 @@
 				strong
 					bodyCopy($black)
 					font-weight 600
+
+@media all and (max-width:$bigscreen)
+	.vj_service
+		max-width 1296px

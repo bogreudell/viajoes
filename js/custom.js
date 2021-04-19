@@ -14,7 +14,7 @@ function videoControls(){
 
 		$text.toggle();
 		$videoControls.toggle();
-		$(this).children('video').addClass('playing');;
+		$(this).children('video').addClass('playing');
 
 		if ( $video.paused ) {
 			$video.play();

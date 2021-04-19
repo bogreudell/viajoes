@@ -12,9 +12,9 @@
 	.vj_icon
 		display inline-block
 		width 70%
-		max-width 125px
-		margin 0 $margin2
-		vertical-align middle
+		max-width 100px
+		margin 0 $margin1
+		vertical-align top
 		
 		img
 			width 100%
@@ -23,22 +23,25 @@
 		p
 			position relative
 			margin-top $margin1
-			bodyCopy($black)
+			bodyCopySmall($black)
 			font-weight 600
 			text-transform uppercase
 			
 			&:before
 				content ''
 				width 30px
-				height 3px
+				height 4px
 				background $black
-				verticalAlign(-10px,50%,-50%,0)
+				verticalAlign(-16px,50%,-50%,0)
 
 @media all and (max-width:$mobile)
 	.vj_icons
+		padding $margin1 0
+		
 		.vj_icon
-			display block
-			margin $margin3 auto 0
-			
-			&:first-of-type
-				margin-top 0
+			margin $margin1
+
+@media all and (min-width:$bigscreen)
+	.vj_icons
+		.vj_icon
+			margin 0 $margin2
