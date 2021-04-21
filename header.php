@@ -18,21 +18,36 @@
 <body <?php body_class(); ?>>
 
 <header class="vj_header" role="navigation">
-	<?php $logo = get_field('logo', 'option'); ?>
-	<?php $logo_url = $logo['url']; ?>
-	<?php $logo_alt = $logo['alt']; ?>
+	<div class="vj_header__wrapper">
+		<?php $logo = get_field('logo', 'option'); ?>
+		<?php $logo_url = $logo['url']; ?>
+		<?php $logo_alt = $logo['alt']; ?>
 
-	<div class="vj_header__logo">
-		<a href="<?php bloginfo('url'); ?>">
-			<img class="vj_header__logo--image" src="<?php echo $logo['url']; ?>" alt="<?php echo $logo_alt; ?>">
-		</a>
+		<div class="vj_header__logo">
+			<a href="<?php bloginfo('url'); ?>">
+				<img class="vj_header__logo--image" src="<?php echo $logo['url']; ?>" alt="<?php echo $logo_alt; ?>">
+			</a>
+		</div>
+		<?php wp_nav_menu(
+				array(
+					'menu' => 'Main Menu', 
+					'menu_class' => 'vj_header__menu--navigation', 
+					'container_class' => 'vj_header__menu' 
+				)
+			  ); 
+
+			  wp_nav_menu(
+			  	array(
+			  		'menu' => 'Main Menu',
+			  		'menu_class' => 'vj_header__mobilemenu--navigation',
+			  		'container_class' => 'vj_header__mobilemenu'
+			  	)
+			  ); ?>
+			  <!-- <i class="fal fa-times"></i> -->
+		<!-- vj_header__menu--actions when user interface is built -->
+		<button id="vj_header__menutoggle">
+			<i class="far fa-bars"></i>
+		</button>
+		<?php get_search_form(); ?>
 	</div>
-	<?php wp_nav_menu(
-			array(
-				'menu' => 'Main Menu', 
-				'menu_class' => 'vj_header__menu--navigation', 
-				'container_class' => 'vj_header__menu' 
-			)
-		  ); ?>
-	<!-- vj_header__menu--actions when user interface is built -->
 </header>

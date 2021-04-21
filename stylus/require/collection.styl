@@ -1,13 +1,52 @@
 body
 	&.post-type-archive-product
+		.vj_productgrid
+			&--desktop
+				width 88.5%
+				margin $margin1 auto
+				
+				span
+					interactive($black,1.2rem)
+					text-transform uppercase
+				
+				button
+					resetButtonStyles($black)
+					interactive($black,1.2rem)
+					text-transform uppercase
+					font-weight 600
+					margin 0 0 0 $margin1
+					padding-bottom 5px
+					
+					&.active
+						border-bottom 1px solid $black
+			
+			&--mobile
+				display none
+				
 		.vj_products
 			&__thumbnail
 				width 24%
+			
+			&.grid--six
+				.vj_products__thumbnail
+					width 16%
+			
+			&.grid--three
+				.vj_products__thumbnail
+					width 32%
+			
+			&.grid--two
+				.vj_products__thumbnail
+					width 49%
+			
+			&.grid--one
+				.vj_products__thumbnail
+					width 100%
 		
 		.woocommerce
 			&-breadcrumb
 				width 88.5%
-				margin $margin4 auto 0
+				margin $margin2 auto 0
 				interactive($black,1.2rem)
 				font-weight 600
 				
@@ -20,7 +59,7 @@ body
 				margin $margin1 auto
 				
 			&-pagination
-				margin $margin2 0 $margin4
+				margin $margin2 0
 				text-align center
 				
 				.page-numbers
@@ -35,18 +74,45 @@ body
 		.prdctfltr
 			&_wc
 				width 88.5%
-				margin 0 auto $margin1
+				margin 0 auto
 				interactive($black,1.6rem)
 			
 			&_woocommerce_filter
 				color $black !important
+			
+			&_filter_title
+				margin-bottom 0
 
 @media all and (max-width:$mobile)
 	body
 		&.post-type-archive-product
+			.vj_productgrid
+				&--mobile
+					display block
+					width 88.5%
+					margin $margin1 auto
+					
+					span
+						interactive($black,1.2rem)
+						text-transform uppercase
+					
+					button
+						resetButtonStyles($black)
+						interactive($black,1.2rem)
+						text-transform uppercase
+						font-weight 600
+						margin 0 0 0 $margin1
+						padding-bottom 5px
+						
+						&.active
+							border-bottom 1px solid $black
+				
+				&--desktop
+					display none
+				
 			.vj_products
 				&__thumbnail
-					width 48%
+					width 49%
 				
 				&__title
 					margin-bottom $margin1

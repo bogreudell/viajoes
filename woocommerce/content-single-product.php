@@ -40,6 +40,7 @@ if ( post_password_required() ) {
 
 	<div class="vj_product">
 		<div class="vj_product__images">
+			<?php if ( $gallery_images ): ?>
 			<div class="vj_product__images--navigation">
 				<img src="<?php echo $featured_image_url; ?>" alt="<?php echo $featured_image_alt; ?>">
 				<?php foreach( $gallery_images as $image ): ?>
@@ -48,46 +49,60 @@ if ( post_password_required() ) {
 					<img src="<?php echo $image_url; ?>" alt="<?php echo $image_alt; ?>">
 				<?php endforeach; ?>
 			</div>
-			<img class="vj_product__images--main" src="<?php echo $featured_image_url; ?>" alt="<?php echo $featured_image_alt; ?>">
+			<?php endif; ?>
+			<img class="vj_product__images--main <?php if( !$gallery_images ): ?>no-gallery<?php endif; ?>" src="<?php echo $featured_image_url; ?>" alt="<?php echo $featured_image_alt; ?>">
 			<div class="clear"></div>
 		</div>
 
 		<div class="vj_product__summary summary entry-summary">
 			<?php
-			/**
-			 * Hook: woocommerce_single_product_summary.
-			 *
-			 * @hooked woocommerce_template_single_title - 5
-			 * @hooked woocommerce_template_single_rating - 10
-			 * @hooked woocommerce_template_single_price - 10
-			 * @hooked woocommerce_template_single_excerpt - 20
-			 * @hooked woocommerce_template_single_add_to_cart - 30
-			 * @hooked woocommerce_template_single_meta - 40
-			 * @hooked woocommerce_template_single_sharing - 50
-			 * @hooked WC_Structured_Data::generate_product_data() - 60
-			 */
-			do_action( 'woocommerce_single_product_summary' );
+			woocommerce_template_single_title();
+			woocommerce_template_single_price();
+			woocommerce_template_single_excerpt();
+			woocommerce_template_single_add_to_cart();
+			woocommerce_template_single_meta();	
 			?>
 		</div>
 
 		<div class="clear"></div>
 	</div>
 
-	<?php if( $related_products ){
+	<ul class="vj_products">
+		<h3>Related <strong>Products<strong></h3>
+		<?php if( $related_products ){
+			foreach( $related_products as $post ){
+				setup_postdata( $post );
 
-		echo '<ul class="vj_products">'.
-			 '<h3>Related <strong>Products<strong></h3>';
+				include( locate_template('components/product-thumbnail.php') );
+			}
+			wp_reset_postdata();
+		} else {
+			global $post;
 
-		foreach( $related_products as $post ){
-			setup_postdata( $post );
+			  // get categories
+			  $terms = wp_get_post_terms( $post->ID, 'product_cat' );
+			  foreach ( $terms as $term ) $cats_array[] = $term->term_id;
 
-			include( locate_template('components/product-thumbnail.php') );
-		}
-		wp_reset_postdata();
+			  $query_args = array( 'post__not_in' => array( $post->ID ), 'posts_per_page' => 8, 'no_found_rows' => 1, 'post_status' => 'publish', 'post_type' => 'product', 'tax_query' => array( 
+			    array(
+			      'taxonomy' => 'product_cat',
+			      'field' => 'id',
+			      'terms' => $cats_array
+			    )));
 
-		echo '</ul>';
-	}
-	?>
+			  $r = new WP_Query($query_args);
+					
+			  if ($r->have_posts()) {
+			    while ($r->have_posts()) { $r->the_post(); global $product;
+
+			    	include( locate_template('components/product-thumbnail.php') );
+			      }
+			    wp_reset_query();
+
+			  }	  
+			}
+		?>
+	</ul>
 </div>
 
 <?php do_action( 'woocommerce_after_single_product' ); ?>

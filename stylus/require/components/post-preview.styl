@@ -3,6 +3,9 @@
 	max-width 980px
 	margin $margin1 auto 0
 	
+	a
+		text-decoration none
+	
 	&__image
 		float left
 		width 60%
@@ -57,7 +60,7 @@
 				
 				h1
 					margin-left auto
-	
+					
 	.clear
 		clear both
 
@@ -70,10 +73,11 @@
 		&__text
 			float none
 			width 100%
+			border-bottom 1px solid $black
 		
 			&--copy
-				position relative
 				verticalAlign(0,0,0,0)
+				position relative
 		
 		.clear
 			display none

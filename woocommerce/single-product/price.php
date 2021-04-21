@@ -1,0 +1,1 @@
+<div class="vj_product__price">Free Swatch</div>
