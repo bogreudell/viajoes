@@ -849,7 +849,7 @@ html {
   cursor: text;
 }
 .vj_header__wrapper form input[type="search"]::placeholder {
-  color: #fff !important;
+  color: #fff;
 }
 .vj_header__wrapper form input[type="submit"] {
   border: 0;
@@ -1303,6 +1303,25 @@ body.post-type-archive-product .prdctfltr_pa_collection {
     margin: 0 15px 0 0;
   }
 }
+body.single .vj_header__wrapper form input[type="search"] {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  border-bottom: 1px solid #000;
+}
+body.single .vj_header__wrapper form input[type="search"]::placeholder {
+  color: #000;
+}
+body.single .vj_header__logo--image1 {
+  display: none !important;
+}
+body.single .vj_header__logo--image2 {
+  display: block !important;
+  height: 100%;
+  width: auto;
+}
 body.single .vj_header__menu--navigation li a {
   color: #000 !important;
 }
@@ -1394,6 +1413,25 @@ body.single .vj_single>img {
 }
 body.single-product {
   padding-top: 85px;
+}
+body.single-product .vj_header__wrapper form input[type="search"] {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  border-bottom: 1px solid #000;
+}
+body.single-product .vj_header__wrapper form input[type="search"]::placeholder {
+  color: #000;
+}
+body.single-product .vj_header__logo--image1 {
+  display: none !important;
+}
+body.single-product .vj_header__logo--image2 {
+  display: block !important;
+  height: 100%;
+  width: auto;
 }
 body.single-product main .woocommerce-breadcrumb {
   width: 90%;
@@ -2020,6 +2058,25 @@ body.woocommerce-checkout main article .woocommerce-checkout-payment #place_orde
 }
 body.search {
   padding-top: 85px;
+}
+body.search .vj_header__wrapper form input[type="search"] {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  border-bottom: 1px solid #000;
+}
+body.search .vj_header__wrapper form input[type="search"]::placeholder {
+  color: #000;
+}
+body.search .vj_header__logo--image1 {
+  display: none !important;
+}
+body.search .vj_header__logo--image2 {
+  display: block !important;
+  height: 100%;
+  width: auto;
 }
 body.search .vj_header__menu--navigation li a {
   color: #000 !important;
