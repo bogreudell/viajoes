@@ -17,33 +17,37 @@
 			right 0 !important
 			left initial !important
 			
-			input[type="search"]
-				resetButtonStyles($black)
-				interactive($black,1.4rem)
-				border-bottom 1px solid $white
-				padding-bottom 3px
-				margin-right 15px
-				cursor text
-				
-				&::placeholder
-					color $white !important
+			input
+				&[type="search"]
+					resetButtonStyles($white)
+					interactive($white,1.4rem)
+					border-bottom 1px solid $white
+					padding-bottom 3px
+					margin-right 15px
+					cursor text
+					
+					&::placeholder
+						color $white !important
 			
-			input[type="submit"]
-				resetButtonStyles($white)
-				interactive($white,1.4rem)
-				letter-spacing 0.1rem
-				font-weight 600
-				background $blue
-				padding 5px 15px
+				&[type="submit"]
+					resetButtonStyles($white)
+					interactive($white,1.4rem)
+					letter-spacing 0.1rem
+					font-weight 600
+					background $blue
+					padding 5px 15px
 	
 	&__logo
 		display inline-block
 		height 65px
 		transition .2s height ease-in-out
 		
-		&--image
+		&--image1
 			height 100%
 			width auto
+		
+		&--image2
+			display none
 	
 	&__menu
 		display inline-block
@@ -69,6 +73,7 @@
 			&__wrapper
 				form
 					input[type="search"]
+						color $black
 						border-bottom 1px solid $black
 						
 						&::placeholder
@@ -76,6 +81,14 @@
 							
 			&__logo
 				height 35px
+				
+				&--image1
+					display none
+				
+				&--image2
+					display block
+					height 100%
+					width auto
 			
 			&__menu
 				&--navigation

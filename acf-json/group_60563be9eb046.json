@@ -4,8 +4,8 @@
     "fields": [
         {
             "key": "field_60563bf8cddfc",
-            "label": "Logo",
-            "name": "logo",
+            "label": "White Background Logo",
+            "name": "white_background_logo",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -16,6 +16,54 @@
                 "id": ""
             },
             "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_6080e4adfe14d",
+            "label": "Transparent Background Logo",
+            "name": "transparent_background_logo",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": 0,
+            "min_height": 0,
+            "min_size": 0,
+            "max_width": 0,
+            "max_height": 0,
+            "max_size": 0,
+            "mime_types": ""
+        },
+        {
+            "key": "field_6080e79df1ac2",
+            "label": "Favicon",
+            "name": "favicon",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
             "preview_size": "medium",
             "library": "all",
             "min_width": "",
@@ -44,5 +92,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1616264192
+    "modified": 1619060649
 }

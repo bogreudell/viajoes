@@ -9,6 +9,7 @@
 	<!-- typefaces from google -->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="<?php the_field('favicon','option'); ?>" type="image/x-icon" />
 
 	<!-- fontawesome for icons -->
 	<script src="https://kit.fontawesome.com/b108d252b7.js" crossorigin="anonymous"></script>
@@ -19,13 +20,15 @@
 
 <header class="vj_header" role="navigation">
 	<div class="vj_header__wrapper">
-		<?php $logo = get_field('logo', 'option'); ?>
-		<?php $logo_url = $logo['url']; ?>
-		<?php $logo_alt = $logo['alt']; ?>
+		<?php $transparent_background_logo = get_field('transparent_background_logo', 'option'); ?>
+		<?php $white_background_logo = get_field('white_background_logo', 'option'); ?>
+		<?php //$logo_url = $logo['url']; ?>
+		<?php //$logo_alt = $logo['alt']; ?>
 
 		<div class="vj_header__logo">
 			<a href="<?php bloginfo('url'); ?>">
-				<img class="vj_header__logo--image" src="<?php echo $logo['url']; ?>" alt="<?php echo $logo_alt; ?>">
+				<img class="vj_header__logo--image1" src="<?php echo $transparent_background_logo['url']; ?>" alt="<?php echo $transparent_background_logo['alt']; ?>">
+				<img class="vj_header__logo--image2" src="<?php echo $white_background_logo['url']; ?>" alt="<?php echo $white_background_logo['alt']; ?>">
 			</a>
 		</div>
 		<?php wp_nav_menu(

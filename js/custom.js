@@ -98,6 +98,12 @@ function mobileNav() {
 
 function productRowsFilter() {
 	$('#product__grid--one').on('click', function(){
+		$(this).addClass('active');
+		$('#product__grid--two').removeClass('active');
+		$('#product__grid--three').removeClass('active');
+		$('#product__grid--six').removeClass('active');
+		$('.product__grid--reset').removeClass('active');
+
 		$('.vj_products').removeClass('grid--two');
 		$('.vj_products').removeClass('grid--three');
 		$('.vj_products').removeClass('grid--six');
@@ -105,6 +111,12 @@ function productRowsFilter() {
 	});
 
 	$('#product__grid--two').on('click', function(){
+		$(this).addClass('active');
+		$('#product__grid--one').removeClass('active');
+		$('#product__grid--three').removeClass('active');
+		$('#product__grid--six').removeClass('active');
+		$('.product__grid--reset').removeClass('active');
+
 		$('.vj_products').removeClass('grid--one');
 		$('.vj_products').removeClass('grid--three');
 		$('.vj_products').removeClass('grid--six');
@@ -112,6 +124,12 @@ function productRowsFilter() {
 	});
 
 	$('#product__grid--three').on('click', function(){
+		$(this).addClass('active');
+		$('#product__grid--one').removeClass('active');
+		$('#product__grid--two').removeClass('active');
+		$('#product__grid--six').removeClass('active');
+		$('.product__grid--reset').removeClass('active');
+
 		$('.vj_products').removeClass('grid--one');
 		$('.vj_products').removeClass('grid--two');
 		$('.vj_products').removeClass('grid--six');
@@ -119,6 +137,12 @@ function productRowsFilter() {
 	});
 
 	$('.product__grid--reset').on('click', function(){
+		$(this).addClass('active');
+		$('#product__grid--one').removeClass('active');
+		$('#product__grid--two').removeClass('active');
+		$('#product__grid--three').removeClass('active');
+		$('#product__grid--six').removeClass('active');
+
 		$('.vj_products').removeClass('grid--one');
 		$('.vj_products').removeClass('grid--two');
 		$('.vj_products').removeClass('grid--three');
@@ -126,6 +150,12 @@ function productRowsFilter() {
 	});
 
 	$('#product__grid--six').on('click', function(){
+		$(this).addClass('active');
+		$('#product__grid--one').removeClass('active');
+		$('#product__grid--two').removeClass('active');
+		$('#product__grid--three').removeClass('active');
+		$('.product__grid--reset').removeClass('active');
+
 		$('.vj_products').removeClass('grid--one');
 		$('.vj_products').removeClass('grid--two');
 		$('.vj_products').removeClass('grid--three');

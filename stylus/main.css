@@ -71,6 +71,7 @@ html {
   font-weight: 100;
   text-transform: uppercase;
   line-height: 4.6rem;
+  text-shadow: 0 0 20px #000;
 }
 .vj_video__slide--text strong {
   font-weight: 600;
@@ -838,10 +839,10 @@ html {
   background: none;
   margin: 0;
   padding: 0;
-  color: #000;
+  color: #fff;
   cursor: pointer;
   font-family: 'Source Sans Pro', sans-serif;
-  color: #000;
+  color: #fff;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 1.4rem;
@@ -876,9 +877,12 @@ html {
   height: 65px;
   transition: 0.2s height ease-in-out;
 }
-.vj_header__logo--image {
+.vj_header__logo--image1 {
   height: 100%;
   width: auto;
+}
+.vj_header__logo--image2 {
+  display: none;
 }
 .vj_header__menu {
   display: inline-block;
@@ -904,6 +908,7 @@ html {
   box-shadow: 0 0 20px rgba(0,0,0,0.33);
 }
 .vj_header.minimize .vj_header__wrapper form input[type="search"] {
+  color: #000;
   border-bottom: 1px solid #000;
 }
 .vj_header.minimize .vj_header__wrapper form input[type="search"]::placeholder {
@@ -911,6 +916,14 @@ html {
 }
 .vj_header.minimize .vj_header__logo {
   height: 35px;
+}
+.vj_header.minimize .vj_header__logo--image1 {
+  display: none;
+}
+.vj_header.minimize .vj_header__logo--image2 {
+  display: block;
+  height: 100%;
+  width: auto;
 }
 .vj_header.minimize .vj_header__menu--navigation li a {
   color: #000 !important;
@@ -1116,6 +1129,7 @@ body.page-template-template-sustainability .vj_bannerimage h1 {
   font-weight: 100;
   text-transform: uppercase;
   line-height: 4.6rem;
+  font-size: 5rem !important;
 }
 body.page-template-template-sustainability .vj_bannerimage h1 span {
   font-family: 'Playfair Display', serif;
@@ -1221,17 +1235,27 @@ body.post-type-archive-product .woocommerce-pagination .page-numbers li .current
 body.post-type-archive-product .prdctfltr_wc {
   width: 88.5%;
   margin: 0 auto;
-  font-family: 'Source Sans Pro', sans-serif;
-  color: #000;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 1.6rem;
 }
 body.post-type-archive-product .prdctfltr_woocommerce_filter {
   color: #000 !important;
 }
 body.post-type-archive-product .prdctfltr_filter_title {
   margin-bottom: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+}
+body.post-type-archive-product .prdctfltr_filter {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+body.post-type-archive-product .prdctfltr_pa_collection {
+  column-count: 2;
 }
 @media all and (max-width: 740px) {
   body.post-type-archive-product .vj_productgrid--mobile {
