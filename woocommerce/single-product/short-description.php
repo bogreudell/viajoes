@@ -24,10 +24,6 @@ global $product;
 
 $short_description = apply_filters( 'woocommerce_short_description', $post->post_excerpt );
 
-if ( ! $short_description ) {
-	return;
-}
-
 ?>
 <ul class="woocommerce-product-details__attributes">
 	<li>

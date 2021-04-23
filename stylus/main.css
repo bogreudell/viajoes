@@ -607,7 +607,7 @@ html {
   vertical-align: top;
 }
 .vj_offerings__list li img {
-  display: none;
+  margin-bottom: 15px;
 }
 .vj_offerings__list li .vj_item--count {
   position: relative;
