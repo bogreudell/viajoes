@@ -1,8 +1,14 @@
 .vj_footer
 	padding $margin2 0
-	background #000
+	background $black
 	color #fff
 	text-align center
+	
+	&__statement
+		width 90%
+		max-width 650px
+		margin 0 auto 30px
+		bodyCopySmall($white)
 	
 	&__menu
 		width 90%
@@ -31,3 +37,6 @@
 			&--navigation
 				column-count 1
 				column-gap 0
+				
+				li
+					display block

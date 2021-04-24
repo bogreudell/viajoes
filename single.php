@@ -19,6 +19,11 @@
 				<i class="fab fa-twitter"></i>
 			</a>
 		</span>
+		<span>
+			<a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=<?php the_permalink(); ?>">
+				<i class="fab fa-linkedin"></i>
+			</a>
+		</span>
 	</div>
 	<?php the_content(); ?>
 	<?php endwhile; ?>

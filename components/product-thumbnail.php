@@ -22,7 +22,11 @@
 			<?php endif; ?>
 		</div>
 		<div class="vj_products__title">
-			<?php the_title(); ?>
+			<?php the_title(); ?><br>
+			<span>
+			<?php echo $product->get_attribute('content'); ?><br>
+			<?php echo $product->get_attribute('product-gsm'); ?> GSM
+			</span>
 		</div>
 		<!-- do we want an "add to cart"? -->
 	</a>

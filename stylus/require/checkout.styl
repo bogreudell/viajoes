@@ -3,6 +3,24 @@ body
 		padding-top 85px
 		
 		.vj_header
+			&__wrapper
+					form
+						input[type="search"]
+							interactive($black,1.4rem)
+							border-bottom 1px solid $black
+						
+							&::placeholder
+								color $black
+							
+				&__logo
+					&--image1
+						display none !important
+					
+					&--image2
+						display block !important
+						height 100%
+						width auto
+
 			&__menu
 				&--navigation
 					li
@@ -22,6 +40,26 @@ body
 						display none
 				
 				.woocommerce
+					&-notice
+						margin-top $margin1
+						bodyCopySmall($black)
+
+					&-order-overview
+						bodyCopySmall($black)
+						margin-bottom $margin1
+
+					&-customer-details
+						bodyCopySmall($black)
+						margin-bottom $margin2
+						
+						h2
+							font-weight 600 !important
+						
+						address
+							font-style normal
+							bodyCopySmall($black)
+							margin-top $margin1
+						
 					&-notices-wrapper
 						margin $margin1 auto
 					
@@ -31,6 +69,10 @@ body
 						a
 							bodyCopy($black)
 							font-weight 600
+					
+					.woocommerce-order-details__title
+						bodyCopySmall($black)
+						font-weight 600 !important
 					
 					&-form-coupon
 						margin-top $margin1

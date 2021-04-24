@@ -5,7 +5,7 @@ body
 			
 			h1
 				bannerHeader()
-				font-size 5rem !important
+				font-size 6rem !important
 			
 				span
 					bannerSerif($white)
@@ -13,3 +13,10 @@ body
 		
 		.vj_footer
 			margin-top $margin1
+
+@media all and (max-width:$mobile)
+	body
+		&.page-template-template-sustainability
+			.vj_bannerimage
+				h1
+					font-size 4rem !important

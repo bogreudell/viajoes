@@ -1,5 +1,7 @@
 body
-	&.post-type-archive-product
+	&.post-type-archive-product,
+	&.tax-product_cat,
+	&.archive
 		.vj_productgrid
 			&--desktop
 				width 88.5%
@@ -30,10 +32,18 @@ body
 			&.grid--six
 				.vj_products__thumbnail
 					width 16%
+					
+				.vj_products__title
+					font-size 1rem
+					line-height 1.6rem
 			
 			&.grid--three
 				.vj_products__thumbnail
 					width 32%
+					
+				.vj_products__title
+					font-size 1rem
+					line-height 1.6rem
 			
 			&.grid--two
 				.vj_products__thumbnail
@@ -78,16 +88,26 @@ body
 			
 			&_woocommerce_filter
 				color $black !important
-			
+						
 			&_filter_title
 				margin-bottom 0
 				interactive($black,1.6rem)
 			
 			&_filter
+				width initial !important
 				interactive($black,1.2rem)
+				margin-right $margin2
+				float none !important
+				display inline-block !important
 			
+			&_pa_product-gsm
+				margin-top 30px
+				display block !important
+				width 33% !important
+
 			&_pa_collection
-				column-count 2
+				.prdctfltr_add_scroll
+					column-count 3
 
 @media all and (max-width:$mobile)
 	body
@@ -123,6 +143,22 @@ body
 				&__title
 					margin-bottom $margin1
 			
+			// .prdctfltr
+			// 	label
+			// 		font-size 80% !important
+					
+			// 	&_filter
+			// 		width 50% !important
+					
+			// 	&_pa_product-gsm
+			// 		width 100% !important
+				
+			// 	&_pa_collection
+			// 		width 100% !important
+					
+			// 		.prdctfltr_add_scroll
+			// 			column-count 3
+									
 			.woocommerce
 				&-pagination			
 					.page-numbers
