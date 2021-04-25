@@ -9,7 +9,7 @@
 	<ul class="vj_offerings__list">
 		<?php while( have_rows('offering') ): the_row(); ?>
 		<!-- I don't love my class choices here -->
-		<li class="vj_offerings__list--item">
+		<li class="vj_offerings__list--item grid-item">
 			<?php $image = get_sub_field('image'); ?>
 			<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
 			<div class="vj_item--count">

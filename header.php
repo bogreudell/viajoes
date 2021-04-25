@@ -13,6 +13,7 @@
 
 	<!-- fontawesome for icons -->
 	<script src="https://kit.fontawesome.com/b108d252b7.js" crossorigin="anonymous"></script>
+
 	<?php wp_head(); ?>
 </head>
 

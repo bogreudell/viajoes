@@ -15,14 +15,15 @@
 		bodyCopy($black)
 	
 	&__list
-		columns 3
-		column-gap 15px
+		// columns 3
+		// column-gap 15px
 		
 		li
 			display inline-block
+			width 31.5%
 			background $beige
 			padding $margin1 15px
-			margin-bottom 15px
+			margin 0 .75% 15px .75%
 			vertical-align top
 						
 			img
@@ -50,9 +51,6 @@
 
 @media all and (max-width:$mobile)
 	.vj_offerings
-		&__list
-			column-count 1
-			column-gap 0
-			
-			&--item
+		&__list			
+			li
 				width 100%

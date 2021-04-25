@@ -18,6 +18,8 @@
 				© 2021 - Present Viajoes, Inc., All Rights Reserved.
 			</div>
 		</footer>
+			<!-- masonry for services page -->
+	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 		<?php wp_footer(); ?>
 	</body>
 </html>

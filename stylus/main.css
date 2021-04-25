@@ -599,15 +599,12 @@ html {
   line-height: 3.15rem;
   color: #000;
 }
-.vj_offerings__list {
-  columns: 3;
-  column-gap: 15px;
-}
 .vj_offerings__list li {
   display: inline-block;
+  width: 31.5%;
   background: #d2ba99;
   padding: 30px 15px;
-  margin-bottom: 15px;
+  margin: 0 0.75% 15px 0.75%;
   vertical-align: top;
 }
 .vj_offerings__list li img {
@@ -648,11 +645,7 @@ html {
   line-height: 2.7rem;
 }
 @media all and (max-width: 740px) {
-  .vj_offerings__list {
-    column-count: 1;
-    column-gap: 0;
-  }
-  .vj_offerings__list--item {
+  .vj_offerings__list li {
     width: 100%;
   }
 }
@@ -1349,6 +1342,11 @@ body.post-type-archive-product .prdctfltr_pa_collection .prdctfltr_add_scroll,
 body.tax-product_cat .prdctfltr_pa_collection .prdctfltr_add_scroll,
 body.archive .prdctfltr_pa_collection .prdctfltr_add_scroll {
   column-count: 3;
+}
+body.post-type-archive-product .prdctfltr_ft_none,
+body.tax-product_cat .prdctfltr_ft_none,
+body.archive .prdctfltr_ft_none {
+  display: none;
 }
 @media all and (max-width: 740px) {
   body.post-type-archive-product .vj_productgrid--mobile {
