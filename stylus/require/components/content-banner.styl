@@ -3,9 +3,9 @@
 	height 75vh
 
 	&.with-image
-		background-position center center !important
-		background-size cover !important
-		background-attachment fixed !important
+		background-position center center
+		background-size cover
+		background-attachment fixed
 	
 	&__content
 		position absolute
@@ -29,6 +29,9 @@
 
 @media all and (max-width:$mobile)
 	.vj_banner
+		&.with-image
+			background-attachment initial
+			
 		&__content
 			&--copy
 				bodyCopySmall($white)

@@ -99,7 +99,7 @@
 	#vj_header__menutoggle
 		display none
 	
-@media all and (max-width:$mobile)
+@media all and (max-width:$desktopM)
 	.vj_header
 		&__wrapper
 			form
@@ -120,7 +120,7 @@
 			position fixed
 			top 0
 			right -100%
-			width 70%
+			width 33%
 			height 100%
 			background rgba(255,255,255,.98)
 			box-sizing border-box
@@ -154,4 +154,9 @@
 			font-size 2.1rem
 			
 			&.open
-				color $black !important	
+				color $black !important
+				
+@media all and (max-width:$mobile)
+	.vj_header
+		&__mobilemenu
+			width 70%

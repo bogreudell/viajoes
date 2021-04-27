@@ -4,7 +4,7 @@
 <?php $link = get_sub_field('link'); ?>
 <?php $link_text = get_sub_field('link_text'); ?>
 
-<div <?php if( $banner_id ): ?>id="<?php echo $banner_id; ?>" <?php endif;?><?php if( $background_image): ?>class="vj_banner with-image" style="background:url(<?php echo $background_image; ?>);"<?php else: ?>class="vj_banner"<?php endif; ?>>
+<div <?php if( $banner_id ): ?>id="<?php echo $banner_id; ?>" <?php endif;?><?php if( $background_image): ?>class="vj_banner with-image" style="background-image:url(<?php echo $background_image; ?>);"<?php else: ?>class="vj_banner"<?php endif; ?>>
 	<?php if( $header_text || $copy_text || $link ): ?>
 	<div class="vj_banner__content">
 		<?php if( $header_text ): ?>

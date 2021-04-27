@@ -59,10 +59,16 @@
 			right 3%
 			resetButtonStyles($white)
 
-@media all and (max-width:$mobile)
+@media all and (max-width:$desktopL)
+	.vj_video
+		height 80vh
+
+@media all and (max-width:$desktopM)
 	.vj_video
 		height 60vh
-		
+
+@media all and (max-width:$desktopS)
+	.vj_video		
 		&__slide
 			&--text
 				bannerHeaderMobile()
