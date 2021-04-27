@@ -17,3 +17,13 @@ body
 				
 				&--copy
 					bodyCopy($white)
+
+@media all and (max-width:$mobile)
+	.page-template-template-contact
+		.vj_contact
+			&__section
+				width 90% !important
+				
+			a[href^="tel:"]
+				color $white !important
+				font-weight 600

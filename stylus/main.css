@@ -499,6 +499,12 @@ html {
   line-height: 3.15rem;
   color: #000;
 }
+@media all and (max-width: 740px) {
+  .vj_contact a[href^="tel:"] {
+    color: #fff !important;
+    font-weight: 600;
+  }
+}
 .vj_service {
   width: 90%;
   margin: 0 auto 60px;
@@ -1121,7 +1127,7 @@ body.page-template-template-about .vj_icons .vj_icon {
     text-align: center;
   }
   body.page-template-template-about .vj_banner.with-image {
-    height: 33vh;
+    background-position: 62% center;
   }
 }
 body.page-template-template-services .vj_bannerimage {
@@ -1778,6 +1784,15 @@ body.page-template-template-contact .vj_contact__section--copy {
   font-size: 2.1rem;
   line-height: 3.15rem;
   color: #fff;
+}
+@media all and (max-width: 740px) {
+  .page-template-template-contact .vj_contact__section {
+    width: 90% !important;
+  }
+  .page-template-template-contact .vj_contact a[href^="tel:"] {
+    color: #fff !important;
+    font-weight: 600;
+  }
 }
 body.woocommerce-cart {
   padding-top: 85px;
