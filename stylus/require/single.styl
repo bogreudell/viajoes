@@ -88,13 +88,17 @@ body
 				height auto
 				margin-bottom $margin1
 
+@media all and (max-width:$desktopM)
+	body
+		&.single
+			#vj_header__menutoggle
+				color $black	
+
 @media all and (max-width:$mobile)
 	body
 		&.single
-			.vj_header
-				#vj_header__menutoggle
-					color $black
-					
+			padding-top $margin1
+
 			.vj_single
 				h1
 					font-size 3rem !important

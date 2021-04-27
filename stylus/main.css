@@ -1523,9 +1523,14 @@ body.single .vj_single>img {
   height: auto;
   margin-bottom: 30px;
 }
-@media all and (max-width: 740px) {
-  body.single .vj_header #vj_header__menutoggle {
+@media all and (max-width: 1088px) {
+  body.single #vj_header__menutoggle {
     color: #000;
+  }
+}
+@media all and (max-width: 740px) {
+  body.single {
+    padding-top: 30px;
   }
   body.single .vj_single h1 {
     font-size: 3rem !important;
@@ -1579,16 +1584,18 @@ body.single-product main .woocommerce-notices-wrapper {
   color: #000;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 1.2rem;
-  font-weight: 200;
+  font-size: 1.6rem;
 }
 body.single-product main .woocommerce-notices-wrapper a {
   font-family: 'Source Sans Pro', sans-serif;
-  color: #000;
+  color: #fff;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   font-weight: 600;
+  background: #042a75;
+  padding: 5px 15px;
+  margin-right: 15px;
 }
 body.single-product main .product {
   width: 90%;
@@ -1729,12 +1736,14 @@ body.single-product main .product .vj_products h3 {
 body.single-product main .product .vj_products__thumbnail {
   width: 24%;
 }
+@media all and (max-width: 1088px) {
+  body.single-product #vj_header__menutoggle {
+    color: #000;
+  }
+}
 @media all and (max-width: 740px) {
   body.single-product {
     padding-top: 30px;
-  }
-  body.single-product #vj_header__menutoggle {
-    color: #000;
   }
   body.single-product main .product .vj_product__images {
     width: 90%;
@@ -1753,6 +1762,25 @@ body.single-product main .product .vj_products__thumbnail {
   body.single-product main .product .vj_products__title {
     margin-bottom: 30px;
   }
+}
+body.page-template-template-contact .vj_header__wrapper {
+  position: relative;
+}
+body.page-template-template-contact .vj_header__wrapper form input[type="submit"] {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #042a75;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  background: #fff;
+}
+body.page-template-template-contact .vj_header.minimize .vj_header__wrapper form input[type="submit"] {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  background: #042a75;
 }
 body.page-template-template-contact .vj_contact {
   background-size: cover !important;
@@ -1910,7 +1938,7 @@ body.woocommerce-cart main article .entry-content .woocommerce-cart-form table t
   padding: 0;
   color: #fff;
   cursor: pointer;
-  background: #000;
+  background: #042a75;
   font-family: 'Source Sans Pro', sans-serif;
   color: #fff;
   text-decoration: none;
@@ -1922,7 +1950,7 @@ body.woocommerce-cart main article .entry-content .woocommerce-cart-form table t
 body.woocommerce-cart main article .entry-content .woocommerce-cart-form table td.actions>.button {
   margin: 30px auto;
   display: block;
-  background: #000;
+  background: #042a75;
   font-family: 'Source Sans Pro', sans-serif;
   color: #fff;
   text-decoration: none;
@@ -1932,7 +1960,7 @@ body.woocommerce-cart main article .entry-content .woocommerce-cart-form table t
   border: 0;
 }
 body.woocommerce-cart main article .entry-content .woocommerce-cart-form table td.actions>.button[disabled] {
-  background: #666;
+  opacity: 0.5;
 }
 body.woocommerce-cart main article .cart-collaterals {
   text-align: center;
@@ -1964,8 +1992,13 @@ body.woocommerce-cart main article .cart-collaterals .wc-proceed-to-checkout a {
   text-transform: uppercase;
   font-size: 1.6rem;
   font-weight: 600;
-  background: #000;
+  background: #042a75;
   padding: 15px 20px;
+}
+@media all and (max-width: 1088px) {
+  body.woocommerce-cart #vj_header__menutoggle {
+    color: #000;
+  }
 }
 @media all and (max-width: 740px) {
   .woocommerce-cart-form table th,
@@ -2268,8 +2301,13 @@ body.woocommerce-checkout main article .woocommerce-checkout-payment #place_orde
   text-transform: uppercase;
   font-size: 1.6rem;
   font-weight: 600;
-  background: #000;
+  background: #042a75;
   padding: 15px 20px;
+}
+@media all and (max-width: 1088px) {
+  body.woocommerce-checkout #vj_header__menutoggle {
+    color: #000;
+  }
 }
 body.search {
   padding-top: 85px;

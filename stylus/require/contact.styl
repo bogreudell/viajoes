@@ -1,5 +1,23 @@
 body
 	&.page-template-template-contact
+		.vj_header		
+			&__wrapper
+				position relative
+								
+				form
+					input					
+						&[type="submit"]
+							interactive($blue,1.4rem)
+							background $white
+			
+			&.minimize
+				.vj_header__wrapper
+					form
+						input
+							&[type="submit"]
+								interactive($white,1.4rem)
+								background $blue
+							
 		.vj_contact
 			background-size cover !important
 			padding $margin4 0

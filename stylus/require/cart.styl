@@ -99,7 +99,7 @@ body
 											
 											button
 												resetButtonStyles($white)
-												background $black
+												background $blue
 												interactive($white,1.6rem)
 												padding 10px 15px
 												border 0
@@ -107,13 +107,13 @@ body
 										&>.button
 											margin $margin1 auto
 											display block
-											background $black
+											background $blue
 											interactive($white,1.6rem)
 											padding 5px 15px
 											border 0
 											
 											&[disabled]
-												background #666
+												opacity .5
 												
 				.cart-collaterals
 					text-align center
@@ -129,7 +129,13 @@ body
 					
 					.wc-proceed-to-checkout
 						a
-							linkStyles($white,$black)
+							linkStyles($white,$blue)
+
+@media all and (max-width:$desktopM)
+	body
+		&.woocommerce-cart
+			#vj_header__menutoggle
+				color $black	
 
 @media all and (max-width:$mobile)
 	.woocommerce

@@ -36,12 +36,15 @@ body
 				&-notices-wrapper
 					margin $margin1 auto
 					width 90%
-					interactive($black,1.2rem)
-					font-weight 200
+					interactive($black,1.6rem)
+					// font-weight 200
 					
 					a
-						interactive($black,1.2rem)
+						interactive($white,1.6rem)
 						font-weight 600
+						background $blue
+						padding 5px 15px
+						margin-right 15px
 			
 			.product
 				width 90%
@@ -142,13 +145,16 @@ body
 					&__thumbnail
 						width 24%
 
+@media all and (max-width:$desktopM)
+	body
+		&.single-product
+			#vj_header__menutoggle
+				color $black	
+
 @media all and (max-width:$mobile)
 	body
 		&.single-product
 			padding-top $margin1
-			
-			#vj_header__menutoggle
-				color $black
 				
 			main
 				.product
