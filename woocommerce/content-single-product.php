@@ -39,7 +39,7 @@ if ( post_password_required() ) {
 <div id="product-<?php the_ID(); ?>" <?php wc_product_class( '', $product ); ?>>
 
 	<div class="vj_product">
-		<div class="vj_product__images">
+		<div class="vj_product__images <?php if ( !$product_image_url ): ?>no-image<?php endif; ?>">
 			<?php if ( $gallery_images ): ?>
 			<div class="vj_product__images--navigation">
 				<img src="<?php echo $featured_image_url; ?>" alt="<?php echo $featured_image_alt; ?>">
@@ -50,7 +50,9 @@ if ( post_password_required() ) {
 				<?php endforeach; ?>
 			</div>
 			<?php endif; ?>
+			<?php if ( $product_image_url ): ?>
 			<img class="vj_product__images--main <?php if( !$gallery_images ): ?>no-gallery<?php endif; ?>" src="<?php echo $featured_image_url; ?>" alt="<?php echo $featured_image_alt; ?>">
+			<?php endif; ?>
 			<div class="clear"></div>
 		</div>
 

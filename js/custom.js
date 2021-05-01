@@ -171,7 +171,9 @@ $(function(){
 	productImagesNav();
 	mobileNav();
 	productRowsFilter();
+});
 
+$(window).load(function(){
 	$('.vj_offerings__list').masonry({
 	  // options
 	  itemSelector: '.grid-item'
