@@ -35,11 +35,12 @@
 		&--player
 			position absolute
 			width 100%
+			height 100%
 			verticalAlign(50%,50%,-50%,-50%)
 			object-fit cover
 			
-			&.playing			
-				object-fit contain
+			// &.playing			
+			// 	object-fit contain
 	
 	&__controls
 		&--leftnav
@@ -59,29 +60,31 @@
 			right 3%
 			resetButtonStyles($white)
 
-@media all and (max-width:$desktopL)
-	.vj_video
-		height 80vh
+// @media all and (max-width:$desktopL)
+// 	.vj_video
+// 		height 80vh
 
-@media all and (max-width:$desktopM)
-	.vj_video
-		height 60vh
+// @media all and (max-width:$desktopM)
+// 	.vj_video
+// 		height 60vh
 
 @media all and (max-width:$desktopS)
-	.vj_video		
+	.vj_video
+		height 60vh
+				
 		&__slide
 			&--text
 				bannerHeaderMobile()
 			
 			&--player
 				height 100%
-				width auto
+				width 100%
 		
 		&__controls
 			&--leftnav,
 			&--rightnav
 				font-size 3rem
-
-@media (min-width:$bigscreen) and (min-height:$height)
-	.vj_video
-		height 90vh
+				
+// @media (min-width:$bigscreen) and (min-height:$height)
+// 	.vj_video
+// 		height 90vh

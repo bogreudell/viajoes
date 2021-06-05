@@ -7,11 +7,13 @@ function videoControls(){
 
 	// play/pause features for individual video slides
 	$videoSlides.on('click', function(){
-		var $video = $(this).children('video').get(0),
+		var $header = $('header'),
+			$video = $(this).children('video').get(0),
 			$text = $(this).children('.vj_video__slide--text'),
 			$container = $(this).parent(),
 			$containerOffset = $(this).offset().top;
 
+		$header.toggle();
 		$text.toggle();
 		$videoControls.toggle();
 		$(this).children('video').addClass('playing');
@@ -26,6 +28,7 @@ function videoControls(){
 			if ( $(window).scrollTop() > $containerOffset ) {
 				$video.pause();
 				$text.show();
+				$header.show();
 				$videoControls.show();
 			}
 		});
@@ -176,6 +179,7 @@ $(function(){
 $(window).load(function(){
 	$('.vj_offerings__list').masonry({
 	  // options
-	  itemSelector: '.grid-item'
+	  itemSelector: '.grid-item',
+	  horizontalOrder: true
 	});
 });
