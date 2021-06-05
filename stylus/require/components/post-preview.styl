@@ -1,7 +1,10 @@
 .vj_blogpreview
-	width 90%
-	max-width 980px
-	margin $margin1 auto 0
+	margin-top $margin1
+	
+	&__wrapper
+		width 90%
+		max-width 980px
+		margin auto
 	
 	a
 		text-decoration none
@@ -34,37 +37,111 @@
 			padding $margin1
 			
 			h1
+				position relative
 				width 90%
 				blockHeader($black)
+				
+				&:before
+					content ''
+					position absolute
+					top -15px
+					width 66px
+					height 4px
+					background $black
 			
 			p
 				margin $margin1 0
-				bodyCopy($black)
+				bodyCopySmall($black)
+				line-height 2.5rem !important
 			
 			div
 				display block
 				text-align right
 				interactive($black,1.2rem)
 				font-weight 600
-			
 	
-	&:nth-of-type(odd)
+	&:first-of-type
+		.vj_blogpreview
+			&__text
+				&--copy
+					h1
+						&:before
+							display none
+							
+					p
+						bodyCopy($black)
+						line-height 3.15rem !important
+	
+	&:nth-of-type(4n+1)
+		width 100%
+		
+		.vj_blogpreview
+			&__text
+				&--copy
+					h1
+						&:before
+							display none
+
+	&:nth-of-type(4n+2)
+		width 30%
+		display inline-block
+		vertical-align top
+		overflow hidden
+		
+		.vj_blogpreview
+			&__image
+				float none
+				width 100%
+				padding-bottom 100%
+				
+			&__text
+				float none
+				width 100%
+				margin-top 15px
+				padding-bottom 0
+				
+				&--copy
+					verticalAlign(0,0,0,0)
+					position relative
+	
+	&:nth-of-type(4n+3)
+		width 66.65%
+		margin-left 3%
+		display inline-block
+		vertical-align top
+		overflow hidden
+		
+		.vj_blogpreview
+			&__image
+				float none
+				width 100%
+				padding-bottom 60%
+				
+			&__text
+				float none
+				width 90%
+				margin-top 15px
+				padding-bottom 0
+				
+				&--copy
+					verticalAlign(0,0,0,0)
+					position relative
+			
+	&:nth-of-type(4n+4)
+		width 100%
+		
 		.vj_blogpreview
 			&__image
 				float right
 				
 			&__text
 				float right
-				text-align right
 				left 5% !important
-				
-				h1
-					margin-left auto
 					
 	.clear
 		clear both
 
-@media all and (max-width:$mobile)
+@media all and (max-width:$desktopSustainability)
 	.vj_blogpreview
 		&__image
 			float none
@@ -79,11 +156,30 @@
 			&--copy
 				verticalAlign(0,0,0,0)
 				position relative
+				
+				h1
+					&:before
+						display none
 		
 		.clear
 			display none
 		
-		&:nth-of-type(odd)
+		&:nth-of-type(4n+2),
+		&:nth-of-type(4n+3)
+			width 100%
+			display inline-block
+			margin-left 0
+				
+			.vj_blogpreview				
+				&__image
+					width 100%
+					padding-bottom 50%
+					
+				&__text
+					width 100%
+					margin-top 0
+		
+		&:nth-of-type(4n+4)
 			.vj_blogpreview
 				&__image
 					float none
